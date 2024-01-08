@@ -1,0 +1,29 @@
+@use '../../../styles/utils/mixins' as *;
+@use '../../../styles/base/variables' as *;
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  &__item {
+    flex: 1 1 0%;
+    display: grid;
+    @include text(bodybase);
+    font-weight: 400;
+  }
+  &__value {
+    @include text(h5);
+    font-weight: 700;
+    font-family: var(--font-space-mono);
+  }
+  @media screen and (min-width: $screen-lg) {
+    &__item {
+      font-size: 24px;
+      line-height: 160%;
+    }
+    &__value {
+      @include text(h4);
+    }
+  }
+}

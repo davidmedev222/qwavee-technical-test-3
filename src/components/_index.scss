@@ -1,4 +1,7 @@
 @use './atoms/logo/Logo';
 @use './atoms/buttons/Button';
 @use './molecules/nav/Nav';
+@use './molecules/card/HighlightNFTCard';
 @use './organism/header/Header';
+@use './organism/section/HeroSection';
+@use './organism/list/StatList';
