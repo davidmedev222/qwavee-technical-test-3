@@ -1,4 +1,6 @@
-import './globals.css'
+import '@/styles/index.scss'
+import { spaceMono, workSans } from '@/utils'
+import clsx from 'clsx'
 
 export const metadata = {
   title: 'Create Next App',
@@ -10,9 +12,11 @@ interface Props {
 }
 
 function RootLayout({ children }: Props) {
+  const classes = clsx(workSans.className, workSans.variable, spaceMono.variable)
+
   return (
     <html lang='en'>
-      <body>{children}</body>
+      <body className={classes}>{children}</body>
     </html>
   )
 }
