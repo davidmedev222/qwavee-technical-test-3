@@ -1,0 +1,43 @@
+/// Mixin for setting font size and line height.
+/// @param $variant - La variante de texto a aplicar. Puede ser uno de los siguientes valores: caption, button, bodybase, bodytext, h1, h2, h3, h4, h5.
+@mixin text($variant) {
+  @if $variant == caption {
+    font-size: 0.75rem; /* 12px */
+    line-height: 110%; /* 13.2px */
+  } @else if $variant == button {
+    font-size: 1rem; /* 16px */
+    line-height: 140%; /* 22.4px */
+  } @else if $variant == bodybase {
+    font-size: 1rem; /* 16px */
+    line-height: 140%; /* 22.4px */
+  } @else if $variant == bodytext {
+    font-size: 1.375rem; /* 22px */
+    line-height: 160%; /* 35.2px */
+  } @else if $variant == h1 {
+    font-size: 4.1875rem; /* 67px */
+    line-height: 110%; /* 73.7px */
+  } @else if $variant == h2 {
+    font-size: 3.1875rem; /* 51px */
+    line-height: 110%; /* 56.1px */
+  } @else if $variant == h3 {
+    font-size: 2.375rem; /* 38px */
+    line-height: 120%; /* 45.6px */
+  } @else if $variant == h4 {
+    font-size: 1.75rem; /* 28px */
+    line-height: 140%; /* 39.2px */
+  } @else if $variant == h5 {
+    font-size: 1.375rem; /* 22px */
+    line-height: 140%; /* 30.8px */
+  } @else {
+    @error "Unknown variant #{$variant}, please enter a value correct.";
+  }
+}
+
+/// Mixin for applying line clamping.
+/// @param $number - The maximum number of lines an element should display.
+@mixin line-clamp($number) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $number;
+}
