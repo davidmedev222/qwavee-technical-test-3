@@ -1,0 +1,14 @@
+@use '../../../styles/utils/mixins' as *;
+@use '../../../styles/base/variables' as *;
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 19px 50px;
+  background-color: $color-purple-500;
+  border-radius: 20px;
+  @include text(button);
+  font-weight: 600;
+}
