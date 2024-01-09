@@ -13,13 +13,7 @@
     gap: 10px;
   }
   &__title {
-    @include text(h4);
-    font-weight: 600;
     text-transform: capitalize;
-  }
-  &__description {
-    @include text(bodybase);
-    font-weight: 400;
   }
 
   @media screen and (min-width: $screen-tablet) {
@@ -60,9 +54,6 @@
     }
     &__title {
       @include text(h1);
-    }
-    &__description {
-      @include text(bodytext);
     }
   }
 }

@@ -1,0 +1,14 @@
+@use '../../../styles/utils/mixins' as *;
+@use '../../../styles/base/variables' as *;
+
+.subhead {
+  @include text(bodybase);
+  font-weight: 400;
+
+  @media screen and (min-width: $screen-lg) {
+    & {
+      @include text(bodytext);
+      text-transform: capitalize;
+    }
+  }
+}

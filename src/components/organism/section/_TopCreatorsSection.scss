@@ -13,22 +13,6 @@
     display: grid;
     gap: 10px;
   }
-  &__title {
-    @include text(h4);
-    font-weight: 600;
-  }
-  &__description {
-    @include text(bodybase);
-    font-weight: 400;
-  }
-  &__btn {
-    border: 2px solid $color-purple-500;
-    background-color: transparent;
-
-    & svg {
-      color: $color-purple-500;
-    }
-  }
 
   @media screen and (min-width: $screen-tablet) {
     & {
@@ -49,16 +33,11 @@
       grid-area: artists;
     }
   }
+
   @media screen and (min-width: $screen-lg) {
     & {
       gap: 60px;
       padding: 80px 115px;
-    }
-    &__title {
-      @include text(h3);
-    }
-    &__description {
-      @include text(bodytext);
     }
   }
 }

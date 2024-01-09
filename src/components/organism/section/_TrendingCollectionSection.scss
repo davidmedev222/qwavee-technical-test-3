@@ -12,14 +12,6 @@
     display: grid;
     gap: 10px;
   }
-  &__title {
-    @include text(h4);
-    font-weight: 600;
-  }
-  &__description {
-    @include text(bodybase);
-    font-weight: 400;
-  }
 
   @media screen and (min-width: $screen-tablet) {
     & {
@@ -30,12 +22,6 @@
     & {
       padding: 80px 115px;
       gap: 60px;
-    }
-    &__title {
-      @include text(h3);
-    }
-    &__description {
-      @include text(bodytext);
     }
   }
 }
