@@ -3,8 +3,11 @@
 @use './molecules/nav/Nav';
 @use './molecules/card/HighlightNFTCard';
 @use './molecules/card/CollectionCard';
+@use './molecules/card/ArtistCard';
 @use './organism/header/Header';
 @use './organism/section/HeroSection';
 @use './organism/section/TrendingCollectionSection';
+@use './organism/section/TopCreatorsSection';
 @use './organism/list/StatList';
 @use './organism/list/CollectionCardList';
+@use './organism/list/ArtistCardList';

@@ -42,3 +42,78 @@ export const trendingCollections = [
     avatar: '/assets/tc-avatar3.png'
   }
 ]
+
+export const topCreators = [
+  {
+    ranking: 1,
+    avatar: '/assets/c-avatar.png',
+    name: 'Keepitreal',
+    price: 34.53
+  },
+  {
+    ranking: 2,
+    avatar: '/assets/c-avatar2.png',
+    name: 'DigiLab',
+    price: 34.53
+  },
+  {
+    ranking: 3,
+    avatar: '/assets/c-avatar3.png',
+    name: 'GravityOne',
+    price: 34.53
+  },
+  {
+    ranking: 4,
+    avatar: '/assets/c-avatar4.png',
+    name: 'Juanie',
+    price: 34.53
+  },
+  {
+    ranking: 5,
+    avatar: '/assets/c-avatar5.png',
+    name: 'BlueWhale',
+    price: 34.53
+  },
+  {
+    ranking: 6,
+    avatar: '/assets/c-avatar6.png',
+    name: 'Mr Fox',
+    price: 34.53
+  },
+  {
+    ranking: 7,
+    avatar: '/assets/c-avatar7.png',
+    name: 'Shroomie',
+    price: 34.53
+  },
+  {
+    ranking: 8,
+    avatar: '/assets/c-avatar8.png',
+    name: 'Robotica',
+    price: 34.53
+  },
+  {
+    ranking: 9,
+    avatar: '/assets/c-avatar9.png',
+    name: 'RustyRobot',
+    price: 34.53
+  },
+  {
+    ranking: 10,
+    avatar: '/assets/c-avatar10.png',
+    name: 'Animakid',
+    price: 34.53
+  },
+  {
+    ranking: 11,
+    avatar: '/assets/c-avatar11.png',
+    name: 'Dotgu',
+    price: 34.53
+  },
+  {
+    ranking: 12,
+    avatar: '/assets/c-avatar12.png',
+    name: 'Ghiblier',
+    price: 34.53
+  }
+]

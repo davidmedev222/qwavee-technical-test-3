@@ -1,0 +1,64 @@
+@use '../../../styles/utils/mixins' as *;
+@use '../../../styles/base/variables' as *;
+
+.creators {
+  display: grid;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 30px;
+  max-width: $screen-desktop;
+  margin: 0 auto;
+
+  &__info {
+    display: grid;
+    gap: 10px;
+  }
+  &__title {
+    @include text(h4);
+    font-weight: 600;
+  }
+  &__description {
+    @include text(bodybase);
+    font-weight: 400;
+  }
+  &__btn {
+    border: 2px solid $color-purple-500;
+    background-color: transparent;
+
+    & svg {
+      color: $color-purple-500;
+    }
+  }
+
+  @media screen and (min-width: $screen-tablet) {
+    & {
+      grid-template-areas:
+        'info btn'
+        'artists artists';
+      grid-template-columns: 1fr auto;
+      padding: 40px 72px;
+    }
+    &__info {
+      grid-area: info;
+    }
+    &__btn {
+      grid-area: btn;
+      align-self: end;
+    }
+    &__artists {
+      grid-area: artists;
+    }
+  }
+  @media screen and (min-width: $screen-lg) {
+    & {
+      gap: 60px;
+      padding: 80px 115px;
+    }
+    &__title {
+      @include text(h3);
+    }
+    &__description {
+      @include text(bodytext);
+    }
+  }
+}

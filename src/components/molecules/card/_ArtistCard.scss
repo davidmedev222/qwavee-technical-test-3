@@ -1,0 +1,74 @@
+@use '../../../styles/utils/mixins' as *;
+@use '../../../styles/base/variables' as *;
+
+.artist {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  background: $bg-secondary;
+  position: relative;
+
+  &__img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    object-fit: cover;
+    background-color: $color-purple-500;
+  }
+  &__ranking {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 12px;
+    top: 13px;
+    color: $color-gray;
+    border-radius: 20px;
+    background: $bg-primary;
+    @include text(bodybase);
+    font-family: var(--font-space-mono);
+    font-weight: 400;
+    display: grid;
+    place-items: center;
+  }
+  &__footer {
+    display: grid;
+    gap: 5px;
+  }
+  &__title {
+    @include text(h5);
+    font-weight: 600;
+  }
+  &__description {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    @include text(bodybase);
+    font-weight: 400;
+    color: $color-gray;
+  }
+  &__price {
+    color: $color-white;
+    font-family: var(--font-space-mono);
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    & {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__img {
+      width: 120px;
+      height: 120px;
+    }
+    &__ranking {
+      left: 20px;
+      top: 18px;
+    }
+    &__footer {
+      place-items: center;
+    }
+  }
+}
