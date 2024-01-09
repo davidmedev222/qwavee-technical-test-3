@@ -1,0 +1,52 @@
+@use '../../../styles/utils/mixins' as *;
+@use '../../../styles/base/variables' as *;
+
+.collection {
+  display: grid;
+  gap: 15px;
+
+  &__header {
+    display: grid;
+    place-items: center;
+    gap: 15px;
+  }
+  &__img {
+    border-radius: 20px;
+  }
+  &__options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  &__count {
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+    @include text(bodybase);
+    font-weight: 700;
+    font-family: var(--font-space-mono);
+    background-color: $color-purple-500;
+  }
+  &__footer {
+    display: grid;
+    gap: 10px;
+  }
+  &__title {
+    @include text(h5);
+    font-weight: 600;
+  }
+  &__artist {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  &__avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+  }
+  &__name {
+    @include text(bodybase);
+    font-weight: 400;
+  }
+}

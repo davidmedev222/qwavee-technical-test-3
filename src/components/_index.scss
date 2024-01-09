@@ -2,6 +2,9 @@
 @use './atoms/buttons/Button';
 @use './molecules/nav/Nav';
 @use './molecules/card/HighlightNFTCard';
+@use './molecules/card/CollectionCard';
 @use './organism/header/Header';
 @use './organism/section/HeroSection';
+@use './organism/section/TrendingCollectionSection';
 @use './organism/list/StatList';
+@use './organism/list/CollectionCardList';
