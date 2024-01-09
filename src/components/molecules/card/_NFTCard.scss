@@ -1,0 +1,65 @@
+@use '../../../styles/utils/mixins' as *;
+@use '../../../styles/base/variables' as *;
+
+.nft {
+  border-radius: 20px;
+  background: $bg-secondary;
+
+  &__image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px 20px 0px 0px;
+    max-height: 296px;
+  }
+  &__info {
+    display: grid;
+    gap: 25px;
+    padding: 20px 20px 25px 20px;
+  }
+  &__header {
+    display: grid;
+    gap: 5px;
+  }
+  &__title {
+    @include text(h5);
+    font-weight: 600;
+  }
+  &__artist {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  &__avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+  }
+  &__name {
+    @include text(bodybase);
+    font-weight: 400;
+  }
+  &__footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 21px;
+  }
+  &__details {
+    display: grid;
+    gap: 8px;
+
+    &--bid {
+      text-align: right;
+    }
+  }
+  &__label {
+    @include text(caption);
+    font-weight: 400;
+    font-family: var(--font-space-mono);
+    color: $color-gray;
+  }
+  &__value {
+    @extend .nft__label;
+    color: $color-white;
+  }
+}

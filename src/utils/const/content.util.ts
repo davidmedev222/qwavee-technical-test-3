@@ -65,67 +65,67 @@ export const topCreators = [
     ranking: 2,
     avatar: '/assets/c-avatar2.png',
     name: 'DigiLab',
-    price: 34.53
+    price: 12.31
   },
   {
     ranking: 3,
     avatar: '/assets/c-avatar3.png',
     name: 'GravityOne',
-    price: 34.53
+    price: 92.12
   },
   {
     ranking: 4,
     avatar: '/assets/c-avatar4.png',
     name: 'Juanie',
-    price: 34.53
+    price: 45.12
   },
   {
     ranking: 5,
     avatar: '/assets/c-avatar5.png',
     name: 'BlueWhale',
-    price: 34.53
+    price: 23.33
   },
   {
     ranking: 6,
     avatar: '/assets/c-avatar6.png',
     name: 'Mr Fox',
-    price: 34.53
+    price: 34.12
   },
   {
     ranking: 7,
     avatar: '/assets/c-avatar7.png',
     name: 'Shroomie',
-    price: 34.53
+    price: 63.12
   },
   {
     ranking: 8,
     avatar: '/assets/c-avatar8.png',
     name: 'Robotica',
-    price: 34.53
+    price: 12.11
   },
   {
     ranking: 9,
     avatar: '/assets/c-avatar9.png',
     name: 'RustyRobot',
-    price: 34.53
+    price: 19.21
   },
   {
     ranking: 10,
     avatar: '/assets/c-avatar10.png',
     name: 'Animakid',
-    price: 34.53
+    price: 20.12
   },
   {
     ranking: 11,
     avatar: '/assets/c-avatar11.png',
     name: 'Dotgu',
-    price: 34.53
+    price: 92.12
   },
   {
     ranking: 12,
     avatar: '/assets/c-avatar12.png',
     name: 'Ghiblier',
-    price: 34.53
+    price: 22.92
   }
 ]
 
@@ -169,5 +169,32 @@ export const categories = [
     title: 'Virtual Worlds',
     icon: PlanetIcon,
     image: '/assets/bc-category8.png'
+  }
+]
+
+export const nfts = [
+  {
+    image: '/assets/dmn-img.png',
+    title: 'Distant Galaxy',
+    avatar: '/assets/c-avatar.png',
+    name: 'MoonDancer',
+    price: 1.63,
+    bid: 0.33
+  },
+  {
+    image: '/assets/dmn-img2.png',
+    title: 'Life On Edena',
+    avatar: '/assets/c-avatar2.png',
+    name: 'NebulaKid',
+    price: 2.31,
+    bid: 0.21
+  },
+  {
+    image: '/assets/dmn-img3.png',
+    title: 'AstroFiction',
+    avatar: '/assets/c-avatar3.png',
+    name: 'Spaceone',
+    price: 5.21,
+    bid: 2.93
   }
 ]

@@ -1,0 +1,28 @@
+@use '../../../styles/base/variables' as *;
+
+.nft__list {
+  display: grid;
+  gap: 20px;
+
+  @media screen and (min-width: $screen-sm) {
+    & {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+    &__item {
+      display: none;
+
+      &:nth-child(-n + 2) {
+        display: block;
+      }
+    }
+  }
+  @media screen and (min-width: $screen-lg) {
+    & {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    &__item {
+      display: block;
+    }
+  }
+}

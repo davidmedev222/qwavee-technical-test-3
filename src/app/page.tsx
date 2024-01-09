@@ -1,4 +1,10 @@
-import { BrowseCategoriesSection, HeroSection, TopCreatorsSection, TrendingCollectionSection } from '@/components'
+import {
+  BrowseCategoriesSection,
+  DisoverMoreNFTSection,
+  HeroSection,
+  TopCreatorsSection,
+  TrendingCollectionSection
+} from '@/components'
 
 function HomePage() {
   return (
@@ -7,6 +13,7 @@ function HomePage() {
       <TrendingCollectionSection />
       <TopCreatorsSection />
       <BrowseCategoriesSection />
+      <DisoverMoreNFTSection />
     </main>
   )
 }
