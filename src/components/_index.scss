@@ -4,10 +4,13 @@
 @use './molecules/card/HighlightNFTCard';
 @use './molecules/card/CollectionCard';
 @use './molecules/card/ArtistCard';
+@use './molecules/card/CategoryCard';
 @use './organism/header/Header';
 @use './organism/section/HeroSection';
 @use './organism/section/TrendingCollectionSection';
 @use './organism/section/TopCreatorsSection';
+@use './organism/section/BrowseCategoriesSection';
 @use './organism/list/StatList';
 @use './organism/list/CollectionCardList';
 @use './organism/list/ArtistCardList';
+@use './organism/list/CategoryCardList';

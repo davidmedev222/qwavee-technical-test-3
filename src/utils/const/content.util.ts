@@ -1,3 +1,14 @@
+import {
+  BasketballIcon,
+  CameraIcon,
+  MagicWandIcon,
+  MusicNotesIcon,
+  PainBrushIcon,
+  PlanetIcon,
+  SwatchesIcon,
+  VideoIcon
+} from '@/components'
+
 export const stats = [
   {
     value: '240k+',
@@ -115,5 +126,48 @@ export const topCreators = [
     avatar: '/assets/c-avatar12.png',
     name: 'Ghiblier',
     price: 34.53
+  }
+]
+
+export const categories = [
+  {
+    title: 'Art',
+    icon: PainBrushIcon,
+    image: '/assets/bc-category.png'
+  },
+  {
+    title: 'Collectibles',
+    icon: SwatchesIcon,
+    image: '/assets/bc-category2.png'
+  },
+  {
+    title: 'Music',
+    icon: MusicNotesIcon,
+    image: '/assets/bc-category3.png'
+  },
+  {
+    title: 'Photography',
+    icon: CameraIcon,
+    image: '/assets/bc-category4.png'
+  },
+  {
+    title: 'Video',
+    icon: VideoIcon,
+    image: '/assets/bc-category5.png'
+  },
+  {
+    title: 'Utility',
+    icon: MagicWandIcon,
+    image: '/assets/bc-category6.png'
+  },
+  {
+    title: 'Sport',
+    icon: BasketballIcon,
+    image: '/assets/bc-category7.png'
+  },
+  {
+    title: 'Virtual Worlds',
+    icon: PlanetIcon,
+    image: '/assets/bc-category8.png'
   }
 ]

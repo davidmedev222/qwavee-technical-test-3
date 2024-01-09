@@ -1,4 +1,4 @@
-import { HeroSection, TopCreatorsSection, TrendingCollectionSection } from '@/components'
+import { BrowseCategoriesSection, HeroSection, TopCreatorsSection, TrendingCollectionSection } from '@/components'
 
 function HomePage() {
   return (
@@ -6,6 +6,7 @@ function HomePage() {
       <HeroSection />
       <TrendingCollectionSection />
       <TopCreatorsSection />
+      <BrowseCategoriesSection />
     </main>
   )
 }
