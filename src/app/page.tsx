@@ -4,6 +4,7 @@ import {
   HeroSection,
   HighlightNFTSection,
   HowItWorksSection,
+  NewsletterSection,
   TopCreatorsSection,
   TrendingCollectionSection
 } from '@/components'
@@ -18,6 +19,7 @@ function HomePage() {
       <DisoverMoreNFTSection />
       <HighlightNFTSection />
       <HowItWorksSection />
+      <NewsletterSection />
     </main>
   )
 }
