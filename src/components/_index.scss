@@ -8,12 +8,14 @@
 @use './molecules/card/ArtistCard';
 @use './molecules/card/CategoryCard';
 @use './molecules/card/NFTCard';
+@use './molecules/card/AuctionTimerCard';
 @use './organism/header/Header';
 @use './organism/section/HeroSection';
 @use './organism/section/TrendingCollectionSection';
 @use './organism/section/TopCreatorsSection';
 @use './organism/section/BrowseCategoriesSection';
 @use './organism/section/DiscoverMoreNFTSection';
+@use './organism/section/HighlightNFTSection';
 @use './organism/list/StatList';
 @use './organism/list/CollectionCardList';
 @use './organism/list/ArtistCardList';
