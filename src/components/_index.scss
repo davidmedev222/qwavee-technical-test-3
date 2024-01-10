@@ -9,6 +9,7 @@
 @use './molecules/card/CategoryCard';
 @use './molecules/card/NFTCard';
 @use './molecules/card/AuctionTimerCard';
+@use './molecules/card/InfoCard';
 @use './organism/header/Header';
 @use './organism/section/HeroSection';
 @use './organism/section/TrendingCollectionSection';
@@ -16,8 +17,10 @@
 @use './organism/section/BrowseCategoriesSection';
 @use './organism/section/DiscoverMoreNFTSection';
 @use './organism/section/HighlightNFTSection';
+@use './organism/section/HowItWorksSection';
 @use './organism/list/StatList';
 @use './organism/list/CollectionCardList';
 @use './organism/list/ArtistCardList';
 @use './organism/list/CategoryCardList';
 @use './organism/list/NFTCardList';
+@use './organism/list/InfoCardList';

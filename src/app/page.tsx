@@ -3,6 +3,7 @@ import {
   DisoverMoreNFTSection,
   HeroSection,
   HighlightNFTSection,
+  HowItWorksSection,
   TopCreatorsSection,
   TrendingCollectionSection
 } from '@/components'
@@ -16,6 +17,7 @@ function HomePage() {
       <BrowseCategoriesSection />
       <DisoverMoreNFTSection />
       <HighlightNFTSection />
+      <HowItWorksSection />
     </main>
   )
 }

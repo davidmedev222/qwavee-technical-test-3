@@ -198,3 +198,26 @@ export const nfts = [
     bid: 2.93
   }
 ]
+
+export const works = [
+  {
+    image: '/assets/hiw-info.png',
+    imageAlt: 'wallet card image',
+    title: 'Setup Your Wallet',
+    description:
+      'Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top right corner.'
+  },
+  {
+    image: '/assets/hiw-info2.png',
+    imageAlt: 'multimedia collection image',
+    title: 'Create Collection',
+    description: 'Upload your work and setup your collection. Add a description, social links and floor price.'
+  },
+  {
+    image: '/assets/hiw-info3.png',
+    imageAlt: 'online store collection image',
+    title: 'Start Creating',
+    description:
+      'Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.'
+  }
+]

@@ -1,0 +1,66 @@
+@use '../../../styles/utils/mixins' as *;
+@use '../../../styles/base/variables' as *;
+
+.info {
+  display: grid;
+  gap: 20px;
+  place-items: center;
+  border-radius: 20px;
+  background-color: $bg-secondary;
+  padding: 20px;
+
+  &__image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+  &__header {
+    display: grid;
+    gap: 10px;
+  }
+  &__title {
+    @include text(bodybase);
+    font-weight: 600;
+  }
+  &__description {
+    @include text(caption);
+    font-weight: 400;
+  }
+
+  @media screen and (min-width: $screen-xsm2) {
+    & {
+      grid-template-columns: auto 1fr;
+    }
+  }
+  @media screen and (min-width: $screen-tablet) {
+    & {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 1fr;
+      align-items: start;
+      padding: 10px 20px 30px 20px;
+      height: 100%;
+    }
+    &__image {
+      width: 160px;
+      height: 160px;
+    }
+    &__header {
+      text-align: center;
+    }
+  }
+  @media screen and (min-width: $screen-lg) {
+    & {
+      padding: 10px 30px 30px 30px;
+    }
+    &__image {
+      width: 250px;
+      height: 250px;
+    }
+    &__title {
+      @include text(h5);
+    }
+    &__description {
+      @include text(bodybase);
+    }
+  }
+}
