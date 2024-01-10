@@ -1,4 +1,4 @@
-import { Header } from '@/components'
+import { Footer, Header } from '@/components'
 import '@/styles/index.scss'
 import { spaceMono, workSans } from '@/utils'
 import clsx from 'clsx'
@@ -20,6 +20,7 @@ function RootLayout({ children }: Props) {
       <body className={classes}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )

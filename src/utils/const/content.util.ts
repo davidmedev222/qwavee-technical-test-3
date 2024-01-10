@@ -1,12 +1,16 @@
 import {
   BasketballIcon,
   CameraIcon,
+  DiscordIcon,
+  InstagramIcon,
   MagicWandIcon,
   MusicNotesIcon,
   PainBrushIcon,
   PlanetIcon,
   SwatchesIcon,
-  VideoIcon
+  TwitterIcon,
+  VideoIcon,
+  YoutubeIcon
 } from '@/components'
 
 export const stats = [
@@ -219,5 +223,28 @@ export const works = [
     title: 'Start Creating',
     description:
       'Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.'
+  }
+]
+
+export const socialIcons = [
+  {
+    title: 'Discord Icon',
+    icon: DiscordIcon,
+    url: 'https://discord.com'
+  },
+  {
+    title: 'Youtube Icon',
+    icon: YoutubeIcon,
+    url: 'https://youtube.com'
+  },
+  {
+    title: 'Instagram Icon',
+    icon: InstagramIcon,
+    url: 'https://instagram.com'
+  },
+  {
+    title: 'Twitter Icon',
+    icon: TwitterIcon,
+    url: 'https://twitter.com'
   }
 ]

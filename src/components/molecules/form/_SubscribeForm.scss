@@ -21,6 +21,20 @@
       outline: none;
     }
   }
+  &--footer {
+    @media screen and (min-width: $screen-tablet) {
+      & {
+        grid-template-columns: 1fr auto;
+        gap: 0;
+        border-radius: 20px;
+        background-color: $color-white;
+        width: fit-content;
+      }
+      &__input {
+        border-radius: 20px 0 0 20px;
+      }
+    }
+  }
 
   @media screen and (min-width: $screen-lg) {
     & {

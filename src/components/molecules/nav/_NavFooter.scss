@@ -1,0 +1,19 @@
+@use '../../../styles/utils/mixins' as *;
+@use '../../../styles/base/variables' as *;
+
+.nav__footer {
+  &__list {
+    display: grid;
+    gap: 20px;
+  }
+  &__item:nth-child(1) {
+    @include text(h5);
+    font-weight: 700;
+    font-family: var(--font-space-mono);
+  }
+  &__link {
+    color: $color-gray-soft;
+    @include text(bodybase);
+    font-weight: 400;
+  }
+}

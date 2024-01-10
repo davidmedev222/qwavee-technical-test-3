@@ -1,6 +1,17 @@
-function LogoTextIcon() {
+interface Props {
+  className?: string
+}
+
+function LogoTextIcon({ className }: Props) {
   return (
-    <svg xmlns='http://www.w3.org/2000/svg' width='150' height='16' viewBox='0 0 150 16' fill='none'>
+    <svg
+      className={className}
+      xmlns='http://www.w3.org/2000/svg'
+      width='150'
+      height='16'
+      viewBox='0 0 150 16'
+      fill='none'
+    >
       <path
         d='M5.61 10.9102H5.907V0.449219H8.085V11.9992H3.828L2.475 1.53822H2.178V11.9992H0V0.449219H4.257L5.61 10.9102Z'
         fill='white'

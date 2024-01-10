@@ -1,12 +1,17 @@
 import { LogoTextIcon, StoreIcon } from '@/components'
 import { Routes } from '@/utils'
+import clsx from 'clsx'
 import Link from 'next/link'
 
-function Logo() {
+interface Props {
+  size?: 'lg'
+}
+
+function Logo({ size }: Props) {
   return (
-    <Link className='logo' href={Routes.Home}>
-      <StoreIcon />
-      <LogoTextIcon />
+    <Link className={clsx('logo', size === 'lg' && 'logo--lg')} href={Routes.Home}>
+      <StoreIcon className='logo__icon' />
+      <LogoTextIcon className='logo__text' />
     </Link>
   )
 }
