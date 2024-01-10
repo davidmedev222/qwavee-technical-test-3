@@ -10,18 +10,21 @@ function HighlightNFTSection() {
         src='/assets/hn-img-mobile.png'
         alt='highlight NFT background'
         fill
+        sizes='100vw'
       />
       <Image
         className='highlight__section__bg highlight__section__bg--tablet'
         src='/assets/hn-img-tablet.png'
         alt='highlight NFT background'
         fill
+        sizes='100vw'
       />
       <Image
         className='highlight__section__bg highlight__section__bg--desktop'
         src='/assets/hn-img-desktop.png'
         alt='highlight NFT background'
         fill
+        sizes='100vw'
       />
       <div className='highlight__section__content'>
         <div className='highlight__section__artist'>

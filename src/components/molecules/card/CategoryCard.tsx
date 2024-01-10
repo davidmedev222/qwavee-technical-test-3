@@ -14,7 +14,13 @@ function CategoryCard({ category }: Props) {
   return (
     <article className='category'>
       <header className='category__header'>
-        <Image fill className='category__img' src={category.image} alt='nft category image' />
+        <Image
+          fill
+          className='category__img'
+          src={category.image}
+          alt='nft category image'
+          sizes='(max-width: 638px) 50vw, (max-width: 835px) 33vw, 25vw'
+        />
         <div className='category__backdrop'>
           <category.icon />
         </div>
