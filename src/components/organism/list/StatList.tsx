@@ -1,11 +1,12 @@
-import { stats } from '@/utils'
+import { Stats } from '@/models'
 import clsx from 'clsx'
 
 interface Props {
   className?: string
+  stats: Stats[]
 }
 
-function StatList({ className }: Props) {
+function StatList({ className, stats }: Props) {
   return (
     <ul className={clsx('stats', className)}>
       {stats.map(({ value, title }) => (

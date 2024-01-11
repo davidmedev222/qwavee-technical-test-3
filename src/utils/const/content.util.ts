@@ -2,6 +2,7 @@ import {
   BasketballIcon,
   CameraIcon,
   DiscordIcon,
+  GlobeIcon,
   InstagramIcon,
   MagicWandIcon,
   MusicNotesIcon,
@@ -12,6 +13,7 @@ import {
   VideoIcon,
   YoutubeIcon
 } from '@/components'
+import { Artist } from '@/models'
 
 export const stats = [
   {
@@ -246,5 +248,300 @@ export const socialIcons = [
     title: 'Twitter Icon',
     icon: TwitterIcon,
     url: 'https://twitter.com'
+  }
+]
+
+export const artists: Artist[] = [
+  {
+    id: '2',
+    images: {
+      covers: [
+        {
+          src: '/assets/ad-cover-mobile.png',
+          alt: 'cover image',
+          type: 'mobile'
+        },
+        {
+          src: '/assets/ad-cover-tablet.png',
+          alt: 'cover image',
+          type: 'tablet'
+        },
+        {
+          src: '/assets/ad-cover-desktop.png',
+          alt: 'cover image',
+          type: 'desktop'
+        }
+      ],
+      avatar: '/assets/ad-avatar.png'
+    },
+    info: {
+      name: 'MarioCarl',
+      code: 's0klhn2...BA1d1',
+      stats: [
+        {
+          value: '22k+',
+          title: 'Volume'
+        },
+        {
+          value: '400k+',
+          title: 'NFTs Sold'
+        },
+        {
+          value: '820+',
+          title: 'Followers'
+        }
+      ],
+      biography: {
+        title: 'Bio',
+        description: 'Animakid is an artist based in London who loves to create and sell NFTs.'
+      },
+      links: [
+        {
+          title: 'Website Icon',
+          icon: GlobeIcon,
+          url: 'https://website.com'
+        },
+        {
+          title: 'Discord Icon',
+          icon: DiscordIcon,
+          url: 'https://discord.com'
+        },
+        {
+          title: 'Youtube Icon',
+          icon: YoutubeIcon,
+          url: 'https://youtube.com'
+        },
+        {
+          title: 'Twitter Icon',
+          icon: TwitterIcon,
+          url: 'https://twitter.com'
+        },
+        {
+          title: 'Instagram Icon',
+          icon: InstagramIcon,
+          url: 'https://instagram.com'
+        }
+      ]
+    },
+    posts: [
+      {
+        image: '/assets/dmn-img.png',
+        title: 'Distant Galaxy',
+        avatar: '/assets/hero-avatar.png',
+        name: 'MarioCarl',
+        price: 1.63,
+        bid: 0.33
+      },
+      {
+        image: '/assets/dmn-img2.png',
+        title: 'Life On Edena',
+        avatar: '/assets/hero-avatar.png',
+        name: 'MarioCarl',
+        price: 2.31,
+        bid: 0.21
+      },
+      {
+        image: '/assets/dmn-img3.png',
+        title: 'AstroFiction',
+        avatar: '/assets/hero-avatar.png',
+        name: 'MarioCarl',
+        price: 5.21,
+        bid: 2.93
+      },
+      {
+        image: '/assets/nc-img.png',
+        title: 'ColorfulDog 0524',
+        avatar: '/assets/hero-avatar.png',
+        name: 'MarioCarl',
+        price: 5.21,
+        bid: 2.93
+      },
+      {
+        image: '/assets/nc-img2.png',
+        title: 'Space Tales',
+        avatar: '/assets/hero-avatar.png',
+        name: 'MarioCarl',
+        price: 5.21,
+        bid: 2.93
+      },
+      {
+        image: '/assets/nc-img3.png',
+        title: 'Cherry Blossom Girl',
+        avatar: '/assets/hero-avatar.png',
+        name: 'MarioCarl',
+        price: 5.21,
+        bid: 2.93
+      },
+      {
+        image: '/assets/nc-img4.png',
+        title: 'Dancing Robots',
+        avatar: '/assets/hero-avatar.png',
+        name: 'MarioCarl',
+        price: 5.21,
+        bid: 2.93
+      },
+      {
+        image: '/assets/nc-img5.png',
+        title: 'IceCream Ape',
+        avatar: '/assets/hero-avatar.png',
+        name: 'MarioCarl',
+        price: 5.21,
+        bid: 2.93
+      },
+      {
+        image: '/assets/nc-img6.png',
+        title: 'CryptoCity',
+        avatar: '/assets/hero-avatar.png',
+        name: 'MarioCarl',
+        price: 5.21,
+        bid: 2.93
+      }
+    ]
+  },
+  {
+    id: '1',
+    images: {
+      covers: [
+        {
+          src: '/assets/ad-cover-mobile.png',
+          alt: 'cover image',
+          type: 'mobile'
+        },
+        {
+          src: '/assets/ad-cover-tablet.png',
+          alt: 'cover image',
+          type: 'tablet'
+        },
+        {
+          src: '/assets/ad-cover-desktop.png',
+          alt: 'cover image',
+          type: 'desktop'
+        }
+      ],
+      avatar: '/assets/ad-avatar.png'
+    },
+    info: {
+      name: 'Animakid',
+      code: '0xc0E3...B79C',
+      stats: [
+        {
+          value: '250k+',
+          title: 'Volume'
+        },
+        {
+          value: '50k+',
+          title: 'NFTs Sold'
+        },
+        {
+          value: '3000+',
+          title: 'Followers'
+        }
+      ],
+      biography: {
+        title: 'Bio',
+        description: "The internet's friendliest designer kid."
+      },
+      links: [
+        {
+          title: 'Website Icon',
+          icon: GlobeIcon,
+          url: 'https://website.com'
+        },
+        {
+          title: 'Discord Icon',
+          icon: DiscordIcon,
+          url: 'https://discord.com'
+        },
+        {
+          title: 'Youtube Icon',
+          icon: YoutubeIcon,
+          url: 'https://youtube.com'
+        },
+        {
+          title: 'Twitter Icon',
+          icon: TwitterIcon,
+          url: 'https://twitter.com'
+        },
+        {
+          title: 'Instagram Icon',
+          icon: InstagramIcon,
+          url: 'https://instagram.com'
+        }
+      ]
+    },
+    posts: [
+      {
+        image: '/assets/dmn-img.png',
+        title: 'Distant Galaxy',
+        avatar: '/assets/hero-avatar.png',
+        name: 'Animakid',
+        price: 1.63,
+        bid: 0.33
+      },
+      {
+        image: '/assets/dmn-img2.png',
+        title: 'Life On Edena',
+        avatar: '/assets/hero-avatar.png',
+        name: 'Animakid',
+        price: 2.31,
+        bid: 0.21
+      },
+      {
+        image: '/assets/dmn-img3.png',
+        title: 'AstroFiction',
+        avatar: '/assets/hero-avatar.png',
+        name: 'Animakid',
+        price: 5.21,
+        bid: 2.93
+      },
+      {
+        image: '/assets/nc-img.png',
+        title: 'ColorfulDog 0524',
+        avatar: '/assets/hero-avatar.png',
+        name: 'Animakid',
+        price: 5.21,
+        bid: 2.93
+      },
+      {
+        image: '/assets/nc-img2.png',
+        title: 'Space Tales',
+        avatar: '/assets/hero-avatar.png',
+        name: 'Animakid',
+        price: 5.21,
+        bid: 2.93
+      },
+      {
+        image: '/assets/nc-img3.png',
+        title: 'Cherry Blossom Girl',
+        avatar: '/assets/hero-avatar.png',
+        name: 'Animakid',
+        price: 5.21,
+        bid: 2.93
+      },
+      {
+        image: '/assets/nc-img4.png',
+        title: 'Dancing Robots',
+        avatar: '/assets/hero-avatar.png',
+        name: 'Animakid',
+        price: 5.21,
+        bid: 2.93
+      },
+      {
+        image: '/assets/nc-img5.png',
+        title: 'IceCream Ape',
+        avatar: '/assets/hero-avatar.png',
+        name: 'Animakid',
+        price: 5.21,
+        bid: 2.93
+      },
+      {
+        image: '/assets/nc-img6.png',
+        title: 'CryptoCity',
+        avatar: '/assets/hero-avatar.png',
+        name: 'Animakid',
+        price: 5.21,
+        bid: 2.93
+      }
+    ]
   }
 ]
