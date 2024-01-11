@@ -1,0 +1,32 @@
+@use '../../../styles/base/variables' as *;
+
+.artist__list {
+  display: grid;
+  gap: 20px;
+
+  &__item {
+    display: none;
+
+    &:nth-child(-n + 5) {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: $screen-tablet) {
+    & {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+    &__item:nth-child(-n + 6) {
+      display: block;
+    }
+  }
+  @media screen and (min-width: $screen-lg) {
+    & {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    &__item {
+      display: block;
+    }
+  }
+}

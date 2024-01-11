@@ -1,0 +1,60 @@
+@use '../../../styles/base/variables' as *;
+
+.newsletter__section {
+  display: grid;
+  align-items: center;
+  gap: 30px;
+  margin: 40px 30px;
+
+  &__img {
+    justify-self: center;
+    border-radius: 20px;
+    height: 255px;
+    object-fit: cover;
+    object-position: center;
+  }
+  &__info {
+    display: grid;
+    gap: 10px;
+  }
+
+  @media screen and (min-width: $screen-tablet) {
+    & {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+        'img info'
+        'img form';
+      gap: 40px 30px;
+      margin: 40px 72px 80px 72px;
+      padding: 40px 30px;
+      border-radius: 20px;
+      background: $bg-secondary;
+    }
+    &__img {
+      grid-area: img;
+      height: 280px;
+    }
+    &__info {
+      align-self: end;
+    }
+    &__form {
+      align-self: flex-start;
+    }
+  }
+  @media screen and (min-width: $screen-lg) {
+    & {
+      gap: 40px 80px;
+      margin: 40px 115px 80px 115px;
+      padding: 60px;
+    }
+    &__img {
+      height: 310px;
+    }
+  }
+  @media screen and (min-width: $screen-xl) {
+    & {
+      max-width: 1050px;
+      margin: 40px auto 80px auto;
+    }
+  }
+}

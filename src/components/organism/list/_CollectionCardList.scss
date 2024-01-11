@@ -1,0 +1,36 @@
+@use '../../../styles/base/variables' as *;
+
+.collection__list {
+  display: grid;
+  gap: 30px;
+
+  &__item {
+    &--two {
+      display: none;
+    }
+    &--three {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    & {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__item {
+      &--two {
+        display: block;
+      }
+    }
+  }
+  @media screen and (min-width: $screen-lg) {
+    & {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    &__item {
+      &--three {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@use '../../../styles/base/variables' as *;
+
+.category__list {
+  display: grid;
+  gap: 20px;
+
+  @media screen and (min-width: $screen-mobile) {
+    & {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media screen and (min-width: $screen-sm) {
+    & {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media screen and (min-width: $screen-tablet) {
+    & {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@use '../../../styles/utils/mixins' as *;
+@use '../../../styles/base/variables' as *;
+
+.heading {
+  @include text(h4);
+  font-weight: 600;
+
+  @media screen and (min-width: $screen-lg) {
+    & {
+      @include text(h3);
+      text-transform: capitalize;
+    }
+  }
+}

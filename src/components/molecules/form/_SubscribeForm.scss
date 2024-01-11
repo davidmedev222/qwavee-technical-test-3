@@ -1,0 +1,27 @@
+@use '../../../styles/base/variables' as *;
+
+.newsletter__form {
+  display: grid;
+  gap: 16px;
+
+  &--footer {
+    @media screen and (min-width: $screen-tablet) {
+      & {
+        grid-template-columns: 1fr auto;
+        gap: 0;
+        border-radius: 20px;
+        background-color: $color-white;
+        width: fit-content;
+      }
+    }
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    & {
+      grid-template-columns: 1fr auto;
+      gap: 0;
+      border-radius: 20px;
+      background-color: $color-white;
+    }
+  }
+}

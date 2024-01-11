@@ -1,0 +1,77 @@
+@use '../../../styles/base/variables' as *;
+@use '../../../styles/utils/mixins' as *;
+
+.footer {
+  background-color: $bg-secondary;
+
+  &__content {
+    display: grid;
+    gap: 30px;
+    padding: 40px 30px;
+    max-width: $screen-desktop;
+    margin: 0 auto;
+  }
+  &__info {
+    display: grid;
+    gap: 20px;
+
+    &__description {
+      @include text(bodybase);
+      font-weight: 400;
+      color: $color-gray-soft;
+    }
+  }
+  &__subscribe {
+    display: grid;
+    gap: 20px;
+
+    &__title {
+      @include text(h5);
+      font-weight: 700;
+      font-family: var(--font-space-mono);
+    }
+    &__description {
+      @include text(bodybase);
+      font-weight: 400;
+      color: $color-gray-soft;
+    }
+  }
+  &__copyright {
+    display: grid;
+    gap: 20px;
+
+    &__divider {
+      height: 1px;
+      width: 100%;
+      background-color: $color-gray;
+    }
+    &__description {
+      color: $color-gray-soft;
+      @include text(caption);
+      font-weight: 400;
+    }
+  }
+
+  @media screen and (min-width: $screen-tablet) {
+    &__content {
+      padding: 40px 72px;
+    }
+    &__copyright {
+      margin-top: 19px;
+    }
+  }
+  @media screen and (min-width: $screen-lg) {
+    &__content {
+      grid-template-columns: auto auto 1fr;
+      gap: 30px 84px;
+      padding: 40px 146.29px;
+    }
+    &__info {
+      max-width: 243px;
+    }
+    &__copyright {
+      grid-column: -1 / 1;
+      margin-top: 0;
+    }
+  }
+}

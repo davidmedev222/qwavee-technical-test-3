@@ -1,0 +1,32 @@
+@use '../../../styles/base/variables' as *;
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  &--lg {
+    .logo__icon {
+      width: 32px;
+      height: 32px;
+    }
+    .logo__text {
+      width: 199.414px;
+      height: 19.8px;
+    }
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    & {
+      gap: 12px;
+    }
+    &__icon {
+      width: 32px;
+      height: 32px;
+    }
+    &__text {
+      width: 199.414px;
+      height: 19.8px;
+    }
+  }
+}

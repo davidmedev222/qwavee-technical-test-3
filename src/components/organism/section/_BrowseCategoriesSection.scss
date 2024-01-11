@@ -1,0 +1,22 @@
+@use '../../../styles/utils/mixins' as *;
+@use '../../../styles/base/variables' as *;
+
+.categories {
+  display: grid;
+  gap: 40px;
+  padding: 40px 30px;
+  max-width: $screen-xl;
+  margin: 0 auto;
+
+  @media screen and (min-width: $screen-tablet) {
+    & {
+      padding: 40px 72px;
+    }
+  }
+  @media screen and (min-width: $screen-lg) {
+    & {
+      gap: 60px;
+      padding: 80px 115px;
+    }
+  }
+}

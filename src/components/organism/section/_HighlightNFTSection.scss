@@ -1,0 +1,89 @@
+@use '../../../styles/utils/mixins' as *;
+@use '../../../styles/base/variables' as *;
+
+.highlight__section {
+  background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, $color-purple-500 100%);
+  position: relative;
+
+  &__bg {
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+
+    &--tablet {
+      display: none;
+    }
+    &--desktop {
+      display: none;
+    }
+  }
+  &__content {
+    display: grid;
+    gap: 30px;
+    padding: 120px 30px 40px 30px;
+    max-width: $screen-desktop;
+    margin: 0 auto;
+  }
+  &__artist {
+    display: flex;
+    gap: 12px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: $bg-secondary;
+    width: fit-content;
+  }
+  &__avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+  }
+  &__name {
+    @include text(bodybase);
+    font-weight: 400;
+  }
+  &__title {
+    @include text(h3);
+    font-weight: 600;
+  }
+
+  @media screen and (min-width: $screen-tablet) {
+    &__bg {
+      &--mobile {
+        display: none;
+      }
+      &--tablet {
+        display: block;
+      }
+    }
+    &__content {
+      grid-template-areas:
+        'artist timer'
+        'title timer'
+        'btn timer';
+      align-items: end;
+      padding: 360px 80px 60px 80px;
+    }
+    &__timer {
+      grid-area: timer;
+    }
+    &__btn {
+      justify-self: flex-start;
+    }
+  }
+  @media screen and (min-width: $screen-lg) {
+    &__bg {
+      &--tablet {
+        display: none;
+      }
+      &--desktop {
+        display: block;
+      }
+    }
+    &__content {
+      padding: 360px 115px 60px 115px;
+    }
+    &__title {
+      @include text(h2);
+    }
+  }
+}

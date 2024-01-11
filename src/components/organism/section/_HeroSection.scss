@@ -1,0 +1,59 @@
+@use '../../../styles/utils/mixins' as *;
+@use '../../../styles/base/variables' as *;
+
+.hero {
+  display: grid;
+  gap: 40px;
+  padding: 40px 30px;
+  max-width: $screen-desktop;
+  margin: 0 auto;
+
+  &__info {
+    display: grid;
+    gap: 10px;
+  }
+  &__title {
+    text-transform: capitalize;
+  }
+
+  @media screen and (min-width: $screen-tablet) {
+    & {
+      grid-template-areas:
+        'info highlight'
+        'btn highlight'
+        'stats highlight';
+      grid-template-columns: repeat(2, 1fr);
+      align-items: start;
+      gap: 30px;
+      padding: 80px 72px;
+    }
+    &__info {
+      grid-area: info;
+      gap: 30px;
+    }
+    &__title {
+      @include text(h3);
+    }
+    &__highlight {
+      grid-area: highlight;
+    }
+    &__btn {
+      grid-area: btn;
+      justify-self: start;
+    }
+    &__stats {
+      grid-area: stats;
+    }
+  }
+  @media screen and (min-width: $screen-lg) {
+    & {
+      padding: 80px 115px;
+    }
+    &__info {
+      gap: 20px;
+    }
+    &__title {
+      @include text(h1);
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@use '../../../styles/utils/mixins' as *;
+@use '../../../styles/base/variables' as *;
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 19px 50px;
+  background-color: $color-purple-500;
+  border-radius: 20px;
+  @include text(button);
+  font-weight: 600;
+
+  &--outlined {
+    border: 2px solid $color-purple-500;
+    background-color: transparent;
+
+    & svg {
+      color: $color-purple-500;
+    }
+  }
+  &--light {
+    color: $color-black;
+    background-color: $color-white;
+
+    & svg {
+      color: $color-purple-500;
+    }
+  }
+}
