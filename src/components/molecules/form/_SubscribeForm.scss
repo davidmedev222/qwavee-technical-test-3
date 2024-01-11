@@ -1,26 +1,9 @@
-@use '../../../styles/utils/mixins' as *;
 @use '../../../styles/base/variables' as *;
 
 .newsletter__form {
   display: grid;
   gap: 16px;
 
-  &__input {
-    @include text(bodybase);
-    font-weight: 400;
-    color: $bg-primary;
-    padding: 16px 20px;
-    border-radius: 20px;
-    background-color: $color-white;
-    width: 100%;
-
-    &::placeholder {
-      color: $bg-primary;
-    }
-    &:focus {
-      outline: none;
-    }
-  }
   &--footer {
     @media screen and (min-width: $screen-tablet) {
       & {
@@ -29,9 +12,6 @@
         border-radius: 20px;
         background-color: $color-white;
         width: fit-content;
-      }
-      &__input {
-        border-radius: 20px 0 0 20px;
       }
     }
   }
@@ -42,9 +22,6 @@
       gap: 0;
       border-radius: 20px;
       background-color: $color-white;
-    }
-    &__input {
-      border-radius: 20px 0 0 20px;
     }
   }
 }

@@ -2,12 +2,15 @@
 @use '../../../styles/utils/mixins' as *;
 
 .footer {
-  display: grid;
-  gap: 30px;
-  padding: 40px 30px;
-  max-width: $screen-desktop;
-  margin: 0 auto;
+  background-color: $bg-secondary;
 
+  &__content {
+    display: grid;
+    gap: 30px;
+    padding: 40px 30px;
+    max-width: $screen-desktop;
+    margin: 0 auto;
+  }
   &__info {
     display: grid;
     gap: 20px;
@@ -50,7 +53,7 @@
   }
 
   @media screen and (min-width: $screen-tablet) {
-    & {
+    &__content {
       padding: 40px 72px;
     }
     &__copyright {
@@ -58,7 +61,7 @@
     }
   }
   @media screen and (min-width: $screen-lg) {
-    & {
+    &__content {
       grid-template-columns: auto auto 1fr;
       gap: 30px 84px;
       padding: 40px 146.29px;

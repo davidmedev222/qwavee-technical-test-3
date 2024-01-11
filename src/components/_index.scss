@@ -2,6 +2,7 @@
 @use './atoms/buttons/Button';
 @use './atoms/text/Heading';
 @use './atoms/text/Subhead';
+@use './atoms/form/Input';
 @use './molecules/nav/Nav';
 @use './molecules/nav/NavFooter';
 @use './molecules/card/HighlightNFTCard';
@@ -13,6 +14,7 @@
 @use './molecules/card/InfoCard';
 @use './molecules/card/InfoSocialCard';
 @use './molecules/form/SubscribeForm';
+@use './molecules/form/CreateAccountForm';
 @use './organism/header/Header';
 @use './organism/section/HeroSection';
 @use './organism/section/TrendingCollectionSection';
@@ -22,6 +24,7 @@
 @use './organism/section/HighlightNFTSection';
 @use './organism/section/HowItWorksSection';
 @use './organism/section/NewsletterSection';
+@use './organism/section/ConnectionSection';
 @use './organism/list/StatList';
 @use './organism/list/CollectionCardList';
 @use './organism/list/ArtistCardList';

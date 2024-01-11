@@ -1,0 +1,42 @@
+@use '../../../styles/utils/mixins' as *;
+@use '../../../styles/base/variables' as *;
+
+.create__form {
+  display: grid;
+  gap: 30px;
+  padding: 30px 30px 40px 30px;
+
+  &__header {
+    display: grid;
+    gap: 20px;
+  }
+  &__title {
+    @include text(h3);
+    font-weight: 600;
+  }
+  &__inputs {
+    display: grid;
+    gap: 15px;
+  }
+  &__btn {
+    margin-top: 15px;
+  }
+
+  @media screen and (min-width: $screen-tablet) {
+    & {
+      gap: 40px;
+      padding: 80px 72px 80px 40px;
+    }
+  }
+  @media screen and (min-width: $screen-lg) {
+    & {
+      padding: 100px 150px 100px 60px;
+    }
+    &__title {
+      @include text(h2);
+    }
+    &__inputs {
+      max-width: 330px;
+    }
+  }
+}
