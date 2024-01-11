@@ -3,6 +3,7 @@
 @use './atoms/text/Heading';
 @use './atoms/text/Subhead';
 @use './atoms/form/Input';
+@use './atoms/nav/TabLink';
 @use './molecules/nav/Nav';
 @use './molecules/nav/NavFooter';
 @use './molecules/card/HighlightNFTCard';
@@ -36,3 +37,4 @@
 @use './organism/list/NFTCardList';
 @use './organism/list/InfoCardList';
 @use './organism/footer/Footer';
+@use './organism/nav/Tabs';

@@ -1,0 +1,53 @@
+@use '../../../styles/utils/mixins' as *;
+@use '../../../styles/base/variables' as *;
+
+.tab__link {
+  @include text(bodybase);
+  font-weight: 600;
+  padding: 19px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 250ms ease-in-out;
+
+  &:hover {
+    border-bottom: 2px solid $color-gray;
+  }
+  &--active {
+    border-bottom: 2px solid $color-gray;
+  }
+  &__badge {
+    border-radius: 20px;
+    background: $bg-secondary;
+    padding: 5px 10px;
+    @include text(caption);
+    font-weight: 400;
+    font-family: var(--font-space-mono);
+    display: none;
+
+    &--active {
+      background-color: $color-gray;
+    }
+  }
+
+  @media screen and (min-width: $screen-tablet) {
+    & {
+      padding: 19px 30px;
+    }
+    &__badge {
+      display: block;
+    }
+  }
+  @media screen and (min-width: $screen-lg) {
+    & {
+      @include text(h5);
+      padding: 14.5px 30px;
+    }
+    &__badge {
+      @include text(bodybase);
+    }
+  }
+}

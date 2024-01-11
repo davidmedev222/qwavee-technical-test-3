@@ -12,6 +12,17 @@
     gap: 10px;
   }
 
+  @media screen and (min-width: $screen-sm) {
+    &__nfts {
+      & li {
+        display: none;
+
+        &:nth-child(-n + 2) {
+          display: block;
+        }
+      }
+    }
+  }
   @media screen and (min-width: $screen-tablet) {
     & {
       grid-template-areas:
@@ -35,6 +46,11 @@
     & {
       gap: 60px;
       padding: 80px 115px;
+    }
+    &__nfts {
+      & li {
+        display: block;
+      }
     }
   }
 }

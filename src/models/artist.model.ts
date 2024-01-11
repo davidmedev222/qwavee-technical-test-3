@@ -33,8 +33,18 @@ export interface ArtistInfo {
   links: Link[]
 }
 
+interface Post {
+  image: string
+  title: string
+  avatar: string
+  name: string
+  price: number
+  bid: number
+}
+
 export interface Artist {
   id: string
   images: Images
   info: ArtistInfo
+  posts: Post[]
 }

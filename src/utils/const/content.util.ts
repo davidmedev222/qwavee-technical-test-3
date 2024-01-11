@@ -253,7 +253,7 @@ export const socialIcons = [
 
 export const artists: Artist[] = [
   {
-    id: '1',
+    id: '2',
     images: {
       covers: [
         {
@@ -275,7 +275,7 @@ export const artists: Artist[] = [
       avatar: '/assets/ad-avatar.png'
     },
     info: {
-      name: 'Animakid',
+      name: 'MarioCarl',
       code: 's0klhn2...BA1d1',
       stats: [
         {
@@ -322,10 +322,84 @@ export const artists: Artist[] = [
           url: 'https://instagram.com'
         }
       ]
-    }
+    },
+    posts: [
+      {
+        image: '/assets/dmn-img.png',
+        title: 'Distant Galaxy',
+        avatar: '/assets/hero-avatar.png',
+        name: 'MarioCarl',
+        price: 1.63,
+        bid: 0.33
+      },
+      {
+        image: '/assets/dmn-img2.png',
+        title: 'Life On Edena',
+        avatar: '/assets/hero-avatar.png',
+        name: 'MarioCarl',
+        price: 2.31,
+        bid: 0.21
+      },
+      {
+        image: '/assets/dmn-img3.png',
+        title: 'AstroFiction',
+        avatar: '/assets/hero-avatar.png',
+        name: 'MarioCarl',
+        price: 5.21,
+        bid: 2.93
+      },
+      {
+        image: '/assets/nc-img.png',
+        title: 'ColorfulDog 0524',
+        avatar: '/assets/hero-avatar.png',
+        name: 'MarioCarl',
+        price: 5.21,
+        bid: 2.93
+      },
+      {
+        image: '/assets/nc-img2.png',
+        title: 'Space Tales',
+        avatar: '/assets/hero-avatar.png',
+        name: 'MarioCarl',
+        price: 5.21,
+        bid: 2.93
+      },
+      {
+        image: '/assets/nc-img3.png',
+        title: 'Cherry Blossom Girl',
+        avatar: '/assets/hero-avatar.png',
+        name: 'MarioCarl',
+        price: 5.21,
+        bid: 2.93
+      },
+      {
+        image: '/assets/nc-img4.png',
+        title: 'Dancing Robots',
+        avatar: '/assets/hero-avatar.png',
+        name: 'MarioCarl',
+        price: 5.21,
+        bid: 2.93
+      },
+      {
+        image: '/assets/nc-img5.png',
+        title: 'IceCream Ape',
+        avatar: '/assets/hero-avatar.png',
+        name: 'MarioCarl',
+        price: 5.21,
+        bid: 2.93
+      },
+      {
+        image: '/assets/nc-img6.png',
+        title: 'CryptoCity',
+        avatar: '/assets/hero-avatar.png',
+        name: 'MarioCarl',
+        price: 5.21,
+        bid: 2.93
+      }
+    ]
   },
   {
-    id: '2',
+    id: '1',
     images: {
       covers: [
         {
@@ -347,7 +421,7 @@ export const artists: Artist[] = [
       avatar: '/assets/ad-avatar.png'
     },
     info: {
-      name: 'MarioCarl',
+      name: 'Animakid',
       code: '0xc0E3...B79C',
       stats: [
         {
@@ -394,6 +468,80 @@ export const artists: Artist[] = [
           url: 'https://instagram.com'
         }
       ]
-    }
+    },
+    posts: [
+      {
+        image: '/assets/dmn-img.png',
+        title: 'Distant Galaxy',
+        avatar: '/assets/hero-avatar.png',
+        name: 'Animakid',
+        price: 1.63,
+        bid: 0.33
+      },
+      {
+        image: '/assets/dmn-img2.png',
+        title: 'Life On Edena',
+        avatar: '/assets/hero-avatar.png',
+        name: 'Animakid',
+        price: 2.31,
+        bid: 0.21
+      },
+      {
+        image: '/assets/dmn-img3.png',
+        title: 'AstroFiction',
+        avatar: '/assets/hero-avatar.png',
+        name: 'Animakid',
+        price: 5.21,
+        bid: 2.93
+      },
+      {
+        image: '/assets/nc-img.png',
+        title: 'ColorfulDog 0524',
+        avatar: '/assets/hero-avatar.png',
+        name: 'Animakid',
+        price: 5.21,
+        bid: 2.93
+      },
+      {
+        image: '/assets/nc-img2.png',
+        title: 'Space Tales',
+        avatar: '/assets/hero-avatar.png',
+        name: 'Animakid',
+        price: 5.21,
+        bid: 2.93
+      },
+      {
+        image: '/assets/nc-img3.png',
+        title: 'Cherry Blossom Girl',
+        avatar: '/assets/hero-avatar.png',
+        name: 'Animakid',
+        price: 5.21,
+        bid: 2.93
+      },
+      {
+        image: '/assets/nc-img4.png',
+        title: 'Dancing Robots',
+        avatar: '/assets/hero-avatar.png',
+        name: 'Animakid',
+        price: 5.21,
+        bid: 2.93
+      },
+      {
+        image: '/assets/nc-img5.png',
+        title: 'IceCream Ape',
+        avatar: '/assets/hero-avatar.png',
+        name: 'Animakid',
+        price: 5.21,
+        bid: 2.93
+      },
+      {
+        image: '/assets/nc-img6.png',
+        title: 'CryptoCity',
+        avatar: '/assets/hero-avatar.png',
+        name: 'Animakid',
+        price: 5.21,
+        bid: 2.93
+      }
+    ]
   }
 ]
