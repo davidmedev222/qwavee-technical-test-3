@@ -2,6 +2,7 @@ import {
   BasketballIcon,
   CameraIcon,
   DiscordIcon,
+  GlobeIcon,
   InstagramIcon,
   MagicWandIcon,
   MusicNotesIcon,
@@ -12,6 +13,7 @@ import {
   VideoIcon,
   YoutubeIcon
 } from '@/components'
+import { Artist } from '@/models'
 
 export const stats = [
   {
@@ -246,5 +248,152 @@ export const socialIcons = [
     title: 'Twitter Icon',
     icon: TwitterIcon,
     url: 'https://twitter.com'
+  }
+]
+
+export const artists: Artist[] = [
+  {
+    id: '1',
+    images: {
+      covers: [
+        {
+          src: '/assets/ad-cover-mobile.png',
+          alt: 'cover image',
+          type: 'mobile'
+        },
+        {
+          src: '/assets/ad-cover-tablet.png',
+          alt: 'cover image',
+          type: 'tablet'
+        },
+        {
+          src: '/assets/ad-cover-desktop.png',
+          alt: 'cover image',
+          type: 'desktop'
+        }
+      ],
+      avatar: '/assets/ad-avatar.png'
+    },
+    info: {
+      name: 'Animakid',
+      code: 's0klhn2...BA1d1',
+      stats: [
+        {
+          value: '22k+',
+          title: 'Volume'
+        },
+        {
+          value: '400k+',
+          title: 'NFTs Sold'
+        },
+        {
+          value: '820+',
+          title: 'Followers'
+        }
+      ],
+      biography: {
+        title: 'Bio',
+        description: 'Animakid is an artist based in London who loves to create and sell NFTs.'
+      },
+      links: [
+        {
+          title: 'Website Icon',
+          icon: GlobeIcon,
+          url: 'https://website.com'
+        },
+        {
+          title: 'Discord Icon',
+          icon: DiscordIcon,
+          url: 'https://discord.com'
+        },
+        {
+          title: 'Youtube Icon',
+          icon: YoutubeIcon,
+          url: 'https://youtube.com'
+        },
+        {
+          title: 'Twitter Icon',
+          icon: TwitterIcon,
+          url: 'https://twitter.com'
+        },
+        {
+          title: 'Instagram Icon',
+          icon: InstagramIcon,
+          url: 'https://instagram.com'
+        }
+      ]
+    }
+  },
+  {
+    id: '2',
+    images: {
+      covers: [
+        {
+          src: '/assets/ad-cover-mobile.png',
+          alt: 'cover image',
+          type: 'mobile'
+        },
+        {
+          src: '/assets/ad-cover-tablet.png',
+          alt: 'cover image',
+          type: 'tablet'
+        },
+        {
+          src: '/assets/ad-cover-desktop.png',
+          alt: 'cover image',
+          type: 'desktop'
+        }
+      ],
+      avatar: '/assets/ad-avatar.png'
+    },
+    info: {
+      name: 'MarioCarl',
+      code: '0xc0E3...B79C',
+      stats: [
+        {
+          value: '250k+',
+          title: 'Volume'
+        },
+        {
+          value: '50k+',
+          title: 'NFTs Sold'
+        },
+        {
+          value: '3000+',
+          title: 'Followers'
+        }
+      ],
+      biography: {
+        title: 'Bio',
+        description: "The internet's friendliest designer kid."
+      },
+      links: [
+        {
+          title: 'Website Icon',
+          icon: GlobeIcon,
+          url: 'https://website.com'
+        },
+        {
+          title: 'Discord Icon',
+          icon: DiscordIcon,
+          url: 'https://discord.com'
+        },
+        {
+          title: 'Youtube Icon',
+          icon: YoutubeIcon,
+          url: 'https://youtube.com'
+        },
+        {
+          title: 'Twitter Icon',
+          icon: TwitterIcon,
+          url: 'https://twitter.com'
+        },
+        {
+          title: 'Instagram Icon',
+          icon: InstagramIcon,
+          url: 'https://instagram.com'
+        }
+      ]
+    }
   }
 ]

@@ -1,0 +1,26 @@
+@use '../../../styles/utils/mixins' as *;
+@use '../../../styles/base/variables' as *;
+
+.info__detail {
+  display: grid;
+  gap: 10px;
+  @include text(bodybase);
+  font-weight: 400;
+
+  &__title {
+    @include text(bodybase);
+    font-weight: 400;
+    font-family: var(--font-space-mono);
+    color: $color-gray;
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    & {
+      @include text(bodytext);
+      text-transform: capitalize;
+    }
+    &__title {
+      @include text(h5);
+    }
+  }
+}

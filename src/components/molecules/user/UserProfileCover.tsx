@@ -1,30 +1,25 @@
+import { Images } from '@/models'
+import clsx from 'clsx'
 import Image from 'next/image'
 
-function UserProfileCover() {
+interface Props {
+  images: Images
+}
+
+function UserProfileCover({ images }: Props) {
   return (
     <div className='cover__user'>
-      <Image
-        className='cover__user__image cover__user__image--mobile'
-        src='/assets/ad-cover-mobile.png'
-        alt='cover image'
-        fill
-        sizes='100vw'
-      />
-      <Image
-        className='cover__user__image cover__user__image--tablet'
-        src='/assets/ad-cover-tablet.png'
-        alt='cover image'
-        fill
-        sizes='100vw'
-      />
-      <Image
-        className='cover__user__image cover__user__image--desktop'
-        src='/assets/ad-cover-desktop.png'
-        alt='cover image'
-        fill
-        sizes='100vw'
-      />
-      <Image className='cover__user__avatar' src='/assets/ad-avatar.png' alt='user avatar' width={120} height={120} />
+      {images.covers.map((image, index) => (
+        <Image
+          key={index}
+          className={clsx('cover__user__image', `cover__user__image--${image.type}`)}
+          src={image.src}
+          alt={image.alt}
+          fill
+          sizes='100vw'
+        />
+      ))}
+      <Image className='cover__user__avatar' src={images.avatar} alt='user avatar' width={120} height={120} />
     </div>
   )
 }

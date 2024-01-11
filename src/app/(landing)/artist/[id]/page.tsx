@@ -1,9 +1,23 @@
-import { UserProfileCover } from '@/components'
+import { ArtistInfoCard, UserProfileCover } from '@/components'
+import { artists } from '@/utils'
+import { notFound } from 'next/navigation'
 
-function ArtistDetailPage() {
+interface Params {
+  id: string
+}
+
+interface Props {
+  params: Params
+}
+
+function ArtistDetailPage({ params }: Props) {
+  const artist = artists.find((artist) => artist.id === params.id)
+  if (!artist) notFound()
+
   return (
     <main>
-      <UserProfileCover />
+      <UserProfileCover images={artist.images} />
+      <ArtistInfoCard artist={artist.info} />
     </main>
   )
 }

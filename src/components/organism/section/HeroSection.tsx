@@ -1,5 +1,5 @@
 import { ButtonLink, Heading, HighlightNFTCard, RocketIcon, StatList, Subhead } from '@/components'
-import { Routes } from '@/utils'
+import { Routes, stats } from '@/utils'
 
 function HeroSection() {
   return (
@@ -15,7 +15,7 @@ function HeroSection() {
         <RocketIcon />
         Get Started
       </ButtonLink>
-      <StatList className='hero__stats' />
+      <StatList className='hero__stats' stats={stats} />
     </section>
   )
 }
