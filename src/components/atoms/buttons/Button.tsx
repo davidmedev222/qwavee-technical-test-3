@@ -5,7 +5,7 @@ type ButtonHTMLAttributes = React.ButtonHTMLAttributes<HTMLButtonElement>
 interface Props extends ButtonHTMLAttributes {
   children: React.ReactNode
   className?: string
-  variant?: 'outlined' | 'light'
+  variant?: 'outlined' | 'light' | 'wallet'
 }
 
 function Button({ children, className, variant, ...rest }: Props) {
@@ -15,6 +15,7 @@ function Button({ children, className, variant, ...rest }: Props) {
         'button',
         variant === 'outlined' && 'button--outlined',
         variant === 'light' && 'button--light',
+        variant === 'wallet' && 'button--wallet',
         className
       )}
       {...rest}
