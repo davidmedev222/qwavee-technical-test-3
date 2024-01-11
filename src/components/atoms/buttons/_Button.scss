@@ -28,4 +28,23 @@
       color: $color-purple-500;
     }
   }
+  &--wallet {
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 14px 20px 14px 40px;
+    border: 1px solid $color-purple-500;
+    background-color: $bg-secondary;
+    @include text(h5);
+
+    @media screen and (min-width: $screen-lg) {
+      & {
+        padding: 16px 20px 16px 40px;
+
+        & svg {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
 }
