@@ -4,6 +4,9 @@
 @use './atoms/text/Subhead';
 @use './atoms/form/Input';
 @use './atoms/nav/TabLink';
+@use './atoms/img/Cover';
+@use './atoms/tags/Tag';
+@use './atoms/user/UserPreview';
 @use './molecules/nav/Nav';
 @use './molecules/nav/NavFooter';
 @use './molecules/card/HighlightNFTCard';
@@ -20,6 +23,7 @@
 @use './molecules/form/SubscribeForm';
 @use './molecules/form/CreateAccountForm';
 @use './molecules/user/UserProfileCover';
+@use './molecules/list/TagList';
 @use './organism/header/Header';
 @use './organism/section/HeroSection';
 @use './organism/section/TrendingCollectionSection';
@@ -30,6 +34,8 @@
 @use './organism/section/HowItWorksSection';
 @use './organism/section/NewsletterSection';
 @use './organism/section/ConnectionSection';
+@use './organism/section/NFTInfoSection';
+@use './organism/section/MoreFromArtistSection';
 @use './organism/list/StatList';
 @use './organism/list/CollectionCardList';
 @use './organism/list/ArtistCardList';

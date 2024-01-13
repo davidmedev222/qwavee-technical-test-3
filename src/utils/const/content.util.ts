@@ -13,7 +13,7 @@ import {
   VideoIcon,
   YoutubeIcon
 } from '@/components'
-import { Artist } from '@/models'
+import { Artist, Nft, NftDetail } from '@/models'
 
 export const stats = [
   {
@@ -178,7 +178,7 @@ export const categories = [
   }
 ]
 
-export const nfts = [
+export const discoverMoreNfts: Nft[] = [
   {
     image: '/assets/dmn-img.png',
     title: 'Distant Galaxy',
@@ -541,6 +541,118 @@ export const artists: Artist[] = [
         name: 'Animakid',
         price: 5.21,
         bid: 2.93
+      }
+    ]
+  }
+]
+
+export const nfts: NftDetail[] = [
+  {
+    id: '1',
+    covers: [
+      {
+        src: '/assets/nft-cover-mobile.png',
+        alt: 'nft cover',
+        type: 'mobile'
+      },
+      {
+        src: '/assets/nft-cover-tablet.png',
+        alt: 'nft cover',
+        type: 'tablet'
+      },
+      {
+        src: '/assets/nft-cover-desktop.png',
+        alt: 'nft cover',
+        type: 'desktop'
+      }
+    ],
+    info: {
+      title: 'The Orbitians',
+      date: 'Minted on Sep 30, 2022',
+      author: {
+        avatar: '/assets/hero-avatar.png',
+        username: 'Dish Studio'
+      },
+      description:
+        "The Orbitians\nis a collection of 10,000 unique NFTs on the Ethereum blockchain,\n\nThere are all sorts of beings in the NFT Universe. The most advanced and friendly of the bunch are Orbitians.\n\nThey live in a metal space machines, high up in the sky and only have one foot on Earth.\nThese Orbitians are a peaceful race, but they have been at war with a group of invaders for many generations.\nThe invaders are called Upside-Downs, because of their inverted bodies that live on the ground, yet do not know any other way to be. Upside-Downs believe that they will be able to win this war if they could only get an eye into Orbitian territory, so they've taken to make human beings their target.",
+      links: [
+        { title: 'View on Etherscan', url: 'https://google.com' },
+        { title: 'View Original', url: 'https://google.com' }
+      ],
+      tags: ['Animation', 'Illustration', 'Moon', 'Moon']
+    },
+    nfts: [
+      {
+        image: '/assets/nft-img7.png',
+        title: 'Foxy Life',
+        avatar: '/assets/hero-avatar.png',
+        name: 'Dish Studio',
+        price: 1.63,
+        bid: 0.33
+      },
+      {
+        image: '/assets/nft-img.png',
+        title: 'Cat from future',
+        avatar: '/assets/hero-avatar.png',
+        name: 'Dish Studio',
+        price: 1.63,
+        bid: 0.33
+      },
+      {
+        image: '/assets/tc-img.png',
+        title: 'Psycho Dog',
+        avatar: '/assets/hero-avatar.png',
+        name: 'Dish Studio',
+        price: 1.63,
+        bid: 0.33
+      },
+      {
+        image: '/assets/nft-img2.png',
+        title: 'Designer Bear',
+        avatar: '/assets/hero-avatar.png',
+        name: 'Dish Studio',
+        price: 1.63,
+        bid: 0.33
+      },
+      {
+        image: '/assets/nft-img3.png',
+        title: 'Dancing Robot 0375',
+        avatar: '/assets/hero-avatar.png',
+        name: 'Dish Studio',
+        price: 1.63,
+        bid: 0.33
+      },
+      {
+        image: '/assets/nft-img4.png',
+        title: 'Dancing Robot 0356',
+        avatar: '/assets/hero-avatar.png',
+        name: 'Dish Studio',
+        price: 1.63,
+        bid: 0.33
+      },
+      {
+        image: '/assets/nft-img5.png',
+        title: 'Dancing Robot 0321',
+        avatar: '/assets/hero-avatar.png',
+        name: 'Dish Studio',
+        price: 1.63,
+        bid: 0.33
+      },
+      {
+        image: '/assets/tc-img7.png',
+        title: 'Dancing Robot 0512',
+        avatar: '/assets/hero-avatar.png',
+        name: 'Dish Studio',
+        price: 1.63,
+        bid: 0.33
+      },
+      {
+        image: '/assets/nft-img6.png',
+        title: 'Dancing Robot 0024',
+        avatar: '/assets/hero-avatar.png',
+        name: 'Dish Studio',
+        price: 1.63,
+        bid: 0.33
       }
     ]
   }

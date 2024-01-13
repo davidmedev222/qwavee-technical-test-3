@@ -24,22 +24,11 @@
     max-width: $screen-desktop;
     margin: 0 auto;
   }
-  &__artist {
-    display: flex;
-    gap: 12px;
+  &__user {
     padding: 10px 20px;
     border-radius: 20px;
     background: $bg-secondary;
     width: fit-content;
-  }
-  &__avatar {
-    width: 24px;
-    height: 24px;
-    border-radius: 100%;
-  }
-  &__name {
-    @include text(bodybase);
-    font-weight: 400;
   }
   &__title {
     @include text(h3);

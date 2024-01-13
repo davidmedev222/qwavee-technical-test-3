@@ -1,3 +1,4 @@
+import { UserPreview } from '@/components'
 import Image from 'next/image'
 
 interface Nft {
@@ -16,14 +17,13 @@ interface Props {
 function NFTCard({ nft }: Props) {
   return (
     <article className='nft'>
-      <Image className='nft__image' src={nft.image} alt='image NFT' width={330} height={296} />
+      <div className='nft__image'>
+        <Image src={nft.image} alt='image NFT' fill sizes='(max-width: 640px) 100vw, (max-width: 1120px) 50vw, 33vw' />
+      </div>
       <div className='nft__info'>
         <header className='nft__header'>
           <h6 className='nft__title'>{nft.title}</h6>
-          <div className='nft__artist'>
-            <Image className='nft__avatar' src={nft.avatar} alt='avatar NFT' width={24} height={24} />
-            <span className='nft__name'>{nft.name}</span>
-          </div>
+          <UserPreview className='nft__user' user={{ avatar: nft.avatar, username: nft.name }} />
         </header>
         <footer className='nft__footer'>
           <div className='nft__details'>

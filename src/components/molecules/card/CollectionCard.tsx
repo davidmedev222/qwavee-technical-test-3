@@ -1,3 +1,4 @@
+import { UserPreview } from '@/components'
 import Image from 'next/image'
 
 interface Props {
@@ -22,11 +23,8 @@ function CollectionCard({ image, imageTwo, imageThree, count, title, artist, ava
         </div>
       </header>
       <footer className='collection__footer'>
-        <h2 className='collection__title'>{title}</h2>
-        <div className='collection__artist'>
-          <Image className='collection__avatar' src={avatar} alt='avatar NFT' width={24} height={24} />
-          <span className='collection__name'>{artist}</span>
-        </div>
+        <h3 className='collection__title'>{title}</h3>
+        <UserPreview user={{ avatar, username: artist }} />
       </footer>
     </article>
   )

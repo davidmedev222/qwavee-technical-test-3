@@ -9,7 +9,7 @@ interface Props {
 function ArtistInfoCard({ artist }: Props) {
   return (
     <article className='artist__info'>
-      <h2 className='artist__info__title'>{artist.name}</h2>
+      <h1 className='artist__info__title'>{artist.name}</h1>
       <div className='artist__info__ctas'>
         <Button className='artist__info__btn'>
           <CopyIcon />
@@ -24,7 +24,7 @@ function ArtistInfoCard({ artist }: Props) {
       <InfoDetailCard title={artist.biography.title}>
         <p>{artist.biography.description}</p>
       </InfoDetailCard>
-      <InfoDetailCard title='Links'>
+      <InfoDetailCard title='Links' titleAs='h3'>
         <div className='artist__info__links'>
           {artist.links.map((social) => (
             <Link key={social.title} href={social.url} target='_blank' rel='noreferrer'>

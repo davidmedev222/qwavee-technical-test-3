@@ -17,7 +17,7 @@ function ArtistCard({ artist }: Props) {
       <Image className='artist__img' src={artist.avatar} alt='artist avatar' width={120} height={120} />
       <span className='artist__ranking'>{artist.ranking}</span>
       <footer className='artist__footer'>
-        <h3 className='artist__title'>{artist.name}</h3>
+        <h4 className='artist__title'>{artist.name}</h4>
         <p className='artist__description'>
           Total Sales: <span className='artist__price'>{artist.price} ETH</span>
         </p>

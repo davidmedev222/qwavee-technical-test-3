@@ -1,0 +1,17 @@
+@use '../../../styles/utils/mixins' as *;
+
+.user_preview {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &__avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+  }
+  &__name {
+    @include text(bodybase);
+    font-weight: 400;
+  }
+}

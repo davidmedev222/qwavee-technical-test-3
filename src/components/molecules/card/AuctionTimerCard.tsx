@@ -2,13 +2,14 @@ import clsx from 'clsx'
 
 interface Props {
   className?: string
+  cta?: JSX.Element
 }
 
-function AuctionTimerCard({ className }: Props) {
+function AuctionTimerCard({ className, cta }: Props) {
   return (
     <article className={clsx('auction', className)}>
-      <p className='auction__description'>Auction ends in:</p>
-      <footer className='auction__footer'>
+      <header className='auction__header'>
+        <p className='auction__description'>Auction ends in:</p>
         <div className='auction__timer'>
           <span className='auction__timer__value'>59</span>
           <span className='auction__timer__label'>Hours</span>
@@ -23,7 +24,8 @@ function AuctionTimerCard({ className }: Props) {
           <span className='auction__timer__value'>59</span>
           <span className='auction__timer__label'>Seconds</span>
         </div>
-      </footer>
+      </header>
+      {cta && cta}
     </article>
   )
 }

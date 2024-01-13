@@ -1,0 +1,30 @@
+@use '../../../styles/utils/mixins' as *;
+@use '../../../styles/base/variables' as *;
+
+.moreartist__section {
+  display: grid;
+  gap: 30px;
+  padding: 40px 30px;
+  max-width: $screen-desktop;
+  margin: 0 auto;
+
+  @media screen and (min-width: $screen-tablet) {
+    & {
+      grid-template-columns: 1fr auto;
+      gap: 60px 100px;
+      padding: 40px 72px;
+    }
+    &__nfts {
+      grid-column: -1 / 1;
+    }
+    &__btn {
+      grid-column-start: 2;
+      grid-row-start: 1;
+    }
+  }
+  @media screen and (min-width: $screen-lg) {
+    & {
+      padding: 80px 115px;
+    }
+  }
+}
