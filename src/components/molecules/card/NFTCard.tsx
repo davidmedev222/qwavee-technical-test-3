@@ -17,7 +17,9 @@ interface Props {
 function NFTCard({ nft }: Props) {
   return (
     <article className='nft'>
-      <Image className='nft__image' src={nft.image} alt='image NFT' width={330} height={296} />
+      <div className='nft__image'>
+        <Image src={nft.image} alt='image NFT' fill sizes='(max-width: 640px) 100vw, (max-width: 1120px) 50vw, 33vw' />
+      </div>
       <div className='nft__info'>
         <header className='nft__header'>
           <h6 className='nft__title'>{nft.title}</h6>

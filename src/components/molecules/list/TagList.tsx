@@ -9,8 +9,8 @@ interface Props {
 function TagList({ tags, className }: Props) {
   return (
     <ul className={clsx('tag__list', className)}>
-      {tags.map((tag) => (
-        <li className='tag__list__item' key={tag}>
+      {tags.map((tag, index) => (
+        <li className='tag__list__item' key={index}>
           <Tag>{tag}</Tag>
         </li>
       ))}

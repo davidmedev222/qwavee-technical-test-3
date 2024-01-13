@@ -1,5 +1,5 @@
 import { ButtonLink, EyeIcon, Heading, NFTCardList, Subhead } from '@/components'
-import { Routes, nfts } from '@/utils'
+import { Routes, discoverMoreNfts } from '@/utils'
 
 function DisoverMoreNFTSection() {
   return (
@@ -10,7 +10,7 @@ function DisoverMoreNFTSection() {
         </Heading>
         <Subhead className='discover__description'>Explore new trending NFTs</Subhead>
       </div>
-      <NFTCardList className='discover__nfts' nfts={nfts} />
+      <NFTCardList className='discover__nfts' nfts={discoverMoreNfts} />
       <ButtonLink className='discover__btn' variant='outlined' href={Routes.Marketplace}>
         <EyeIcon />
         See All
