@@ -24,7 +24,7 @@ function ArtistInfoCard({ artist }: Props) {
       <InfoDetailCard title={artist.biography.title}>
         <p>{artist.biography.description}</p>
       </InfoDetailCard>
-      <InfoDetailCard title='Links'>
+      <InfoDetailCard title='Links' titleAs='h3'>
         <div className='artist__info__links'>
           {artist.links.map((social) => (
             <Link key={social.title} href={social.url} target='_blank' rel='noreferrer'>

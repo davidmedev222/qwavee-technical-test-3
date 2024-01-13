@@ -1,0 +1,79 @@
+@use '../../../styles/utils/mixins' as *;
+@use '../../../styles/base/variables' as *;
+
+.nft__section {
+  display: grid;
+  gap: 20px;
+  padding: 40px 30px;
+  max-width: $screen-desktop;
+  margin: 0 auto;
+
+  &__info {
+    display: grid;
+    gap: 10px;
+  }
+  &__subhead {
+    color: $color-gray;
+  }
+  &__description {
+    white-space: pre-line;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    & svg {
+      width: 24px;
+      height: 24px;
+      color: $color-gray;
+    }
+  }
+
+  @media screen and (min-width: $screen-tablet) {
+    & {
+      grid-template-columns: 1fr auto;
+      grid-template-areas:
+        'info timer'
+        'detail timer'
+        'detail timer'
+        'detail timer'
+        'detail timer';
+      align-items: start;
+      gap: 30px;
+      padding: 40px 72px;
+    }
+    &__title {
+      @include text(h3);
+    }
+    &__timer {
+      grid-area: timer;
+      position: sticky;
+      top: 40px;
+    }
+  }
+  @media screen and (min-width: $screen-lg) {
+    & {
+      gap: 30px 140px;
+      padding: 40px 115px;
+    }
+    &__title {
+      @include text(h2);
+    }
+    &__description {
+      text-transform: none;
+    }
+    &__user {
+      & span {
+        @include text(h5);
+        font-weight: 600;
+      }
+    }
+    &__link {
+      & svg {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}

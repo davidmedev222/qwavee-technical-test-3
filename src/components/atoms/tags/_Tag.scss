@@ -1,0 +1,12 @@
+@use '../../../styles/utils/mixins' as *;
+@use '../../../styles/base/variables' as *;
+
+.tag {
+  @include text(bodybase);
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  border-radius: 20px;
+  background: $bg-secondary;
+}

@@ -1,0 +1,45 @@
+@use '../../../styles/base/variables' as *;
+
+.cover {
+  position: relative;
+  height: 320px;
+
+  &__img {
+    object-fit: cover;
+    object-position: center;
+
+    &--tablet {
+      display: none;
+    }
+    &--desktop {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: $screen-tablet) {
+    & {
+      height: 420px;
+    }
+    &__img {
+      &--mobile {
+        display: none;
+      }
+      &--tablet {
+        display: block;
+      }
+    }
+  }
+  @media screen and (min-width: $screen-lg) {
+    & {
+      height: 560px;
+    }
+    &__img {
+      &--tablet {
+        display: none;
+      }
+      &--desktop {
+        display: block;
+      }
+    }
+  }
+}
