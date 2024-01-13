@@ -9,7 +9,7 @@ interface Props {
 function ArtistInfoCard({ artist }: Props) {
   return (
     <article className='artist__info'>
-      <h2 className='artist__info__title'>{artist.name}</h2>
+      <h1 className='artist__info__title'>{artist.name}</h1>
       <div className='artist__info__ctas'>
         <Button className='artist__info__btn'>
           <CopyIcon />

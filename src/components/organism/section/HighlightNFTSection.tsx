@@ -1,4 +1,4 @@
-import { AuctionTimerCard, ButtonLink, EyeIcon, Heading } from '@/components'
+import { AuctionTimerCard, ButtonLink, EyeIcon, Heading, UserPreview } from '@/components'
 import { Routes } from '@/utils'
 import Image from 'next/image'
 
@@ -27,16 +27,10 @@ function HighlightNFTSection() {
         sizes='100vw'
       />
       <div className='highlight__section__content'>
-        <div className='highlight__section__artist'>
-          <Image
-            className='highlight__section__avatar'
-            src='/assets/hero-avatar.png'
-            alt='avatar NFT'
-            width={24}
-            height={24}
-          />
-          <span className='highlight__section__name'>Animakid</span>
-        </div>
+        <UserPreview
+          className='highlight__section__user'
+          user={{ avatar: '/assets/hero-avatar.png', username: 'Animakid' }}
+        />
         <Heading className='highlight__section__title' as='h6'>
           Magic Mashrooms
         </Heading>
