@@ -16,18 +16,39 @@
   &:focus {
     outline: none;
   }
-
-  &--icon {
+  &__icon {
     position: relative;
 
     & svg {
       position: absolute;
-      inset: 0 0 0 20px;
       color: $color-gray-soft;
-      margin: auto 0;
     }
   }
-  &--with-icon {
+  &__icon--left {
     padding: 16px 20px 16px 52px;
+
+    & ~ svg {
+      margin: auto auto auto 0;
+      inset: 0 0 0 20px;
+    }
+  }
+  &__icon--right {
+    padding: 16px 52px 16px 20px;
+
+    & ~ svg {
+      margin: auto 0 auto auto;
+      inset: 0 20px 0 0;
+    }
+  }
+
+  &--search {
+    padding: 18px 52px 18px 20px;
+    border: 1px solid $bg-secondary;
+    color: $color-white;
+    background-color: transparent;
+
+    &::placeholder {
+      color: $color-gray;
+    }
   }
 }
