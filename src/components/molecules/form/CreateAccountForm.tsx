@@ -10,10 +10,10 @@ function CreateAccountForm() {
         </Subhead>
       </header>
       <div className='create__form__inputs'>
-        <Input type='text' placeholder='Username' icon={<UserIcon />} required />
-        <Input type='email' placeholder='Email Address' icon={<EmailIcon />} required />
-        <Input type='password' placeholder='Password' icon={<LockKeyIcon />} required />
-        <Input type='password' placeholder='Confirm Password' icon={<LockKeyIcon />} required />
+        <Input type='text' placeholder='Username' iconLeft={<UserIcon />} required />
+        <Input type='email' placeholder='Email Address' iconLeft={<EmailIcon />} required />
+        <Input type='password' placeholder='Password' iconLeft={<LockKeyIcon />} required />
+        <Input type='password' placeholder='Confirm Password' iconLeft={<LockKeyIcon />} required />
         <Button className='create__form__btn' type='submit'>
           Create Account
         </Button>
