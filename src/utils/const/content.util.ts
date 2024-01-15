@@ -657,3 +657,80 @@ export const nfts: NftDetail[] = [
     ]
   }
 ]
+
+export const browseMarketplace = {
+  nfts: [
+    {
+      image: '/assets/nft-img7.png',
+      title: 'Foxy Life',
+      avatar: '/assets/hero-avatar.png',
+      name: 'Dish Studio',
+      price: 1.63,
+      bid: 0.33
+    },
+    {
+      image: '/assets/nft-img.png',
+      title: 'Cat from future',
+      avatar: '/assets/hero-avatar.png',
+      name: 'Dish Studio',
+      price: 1.63,
+      bid: 0.33
+    },
+    {
+      image: '/assets/tc-img.png',
+      title: 'Psycho Dog',
+      avatar: '/assets/hero-avatar.png',
+      name: 'Dish Studio',
+      price: 1.63,
+      bid: 0.33
+    },
+    {
+      image: '/assets/nft-img2.png',
+      title: 'Designer Bear',
+      avatar: '/assets/hero-avatar.png',
+      name: 'Dish Studio',
+      price: 1.63,
+      bid: 0.33
+    },
+    {
+      image: '/assets/nc-img2.png',
+      title: 'Colorful Dog 0345',
+      avatar: '/assets/hero-avatar.png',
+      name: 'Dish Studio',
+      price: 1.63,
+      bid: 0.33
+    },
+    {
+      image: '/assets/nft-img4.png',
+      title: 'Dancing Robot 0356',
+      avatar: '/assets/hero-avatar.png',
+      name: 'Dish Studio',
+      price: 1.63,
+      bid: 0.33
+    },
+    {
+      image: '/assets/nc-img3.png',
+      title: 'Cherry Blossom Girl 035',
+      avatar: '/assets/hero-avatar.png',
+      name: 'Dish Studio',
+      price: 1.63,
+      bid: 0.33
+    },
+    {
+      image: '/assets/dmn-img.png',
+      title: 'Space Travel',
+      avatar: '/assets/hero-avatar.png',
+      name: 'Dish Studio',
+      price: 1.63,
+      bid: 0.33
+    },
+    {
+      image: '/assets/nc-img5.png',
+      title: 'Dancing Robot 0024',
+      avatar: '/assets/hero-avatar.png',
+      name: 'IceCream Ape 0324',
+      price: 1.63,
+      bid: 0.33
+    }
+  ]
+}
