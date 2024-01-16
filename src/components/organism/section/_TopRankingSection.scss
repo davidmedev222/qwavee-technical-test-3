@@ -1,0 +1,28 @@
+@use '../../../styles/utils/mixins' as *;
+@use '../../../styles/base/variables' as *;
+
+.ranking__section {
+  display: grid;
+  gap: 10px;
+  padding: 30px;
+  max-width: $screen-desktop;
+  margin: 0 auto;
+
+  @media screen and (min-width: $screen-tablet) {
+    & {
+      gap: 20px;
+      padding: 40px 72px;
+    }
+    &__title {
+      @include text(h3);
+    }
+  }
+  @media screen and (min-width: $screen-lg) {
+    & {
+      padding: 80px 115px;
+    }
+    &__title {
+      @include text(h2);
+    }
+  }
+}

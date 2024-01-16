@@ -37,11 +37,13 @@
 @use './organism/section/NFTInfoSection';
 @use './organism/section/MoreFromArtistSection';
 @use './organism/section/BrowseMarketplaceSection';
+@use './organism/section/TopRankingSection';
 @use './organism/list/StatList';
 @use './organism/list/CollectionCardList';
 @use './organism/list/ArtistCardList';
 @use './organism/list/CategoryCardList';
 @use './organism/list/NFTCardList';
 @use './organism/list/InfoCardList';
+@use './organism/list/RankingTableList';
 @use './organism/footer/Footer';
 @use './organism/nav/Tabs';
