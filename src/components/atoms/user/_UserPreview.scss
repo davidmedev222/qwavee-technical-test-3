@@ -13,5 +13,6 @@
   &__name {
     @include text(bodybase);
     font-weight: 400;
+    @include line-clamp(1);
   }
 }

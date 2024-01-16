@@ -734,3 +734,102 @@ export const browseMarketplace = {
     }
   ]
 }
+
+export const rankings = [
+  {
+    rank: 1,
+    avatar: '/assets/c-avatar.png',
+    username: 'Zain Dokidis',
+    change: '+1.41%',
+    nfts: 66,
+    volume: 12.4
+  },
+  {
+    rank: 2,
+    avatar: '/assets/c-avatar2.png',
+    username: 'Ruben Vetrovs',
+    change: '+1.41%',
+    nfts: 66,
+    volume: 12.4
+  },
+  {
+    rank: 3,
+    avatar: '/assets/c-avatar3.png',
+    username: 'Maren Franci',
+    change: '+1.41%',
+    nfts: 66,
+    volume: 12.4
+  },
+  {
+    rank: 4,
+    avatar: '/assets/c-avatar4.png',
+    username: 'Emerson Carder',
+    change: '+1.41%',
+    nfts: 66,
+    volume: 12.4
+  },
+  {
+    rank: 5,
+    avatar: '/assets/c-avatar5.png',
+    username: 'Talan Korsgaard',
+    change: '+1.41%',
+    nfts: 66,
+    volume: 12.4
+  },
+  {
+    rank: 6,
+    avatar: '/assets/c-avatar6.png',
+    username: 'Haylie Dias',
+    change: '+1.41%',
+    nfts: 66,
+    volume: 12.4
+  },
+  {
+    rank: 7,
+    avatar: '/assets/c-avatar7.png',
+    username: 'James Donin',
+    change: '+1.41%',
+    nfts: 66,
+    volume: 12.4
+  },
+  {
+    rank: 8,
+    avatar: '/assets/c-avatar8.png',
+    username: 'Erin Siphron',
+    change: '+1.41%',
+    nfts: 66,
+    volume: 12.4
+  },
+  {
+    rank: 9,
+    avatar: '/assets/c-avatar9.png',
+    username: 'Cristofer Levin',
+    change: '+1.41%',
+    nfts: 66,
+    volume: 12.4
+  },
+  {
+    rank: 10,
+    avatar: '/assets/c-avatar10.png',
+    username: 'Alena Schleifer',
+    change: '+1.41%',
+    nfts: 66,
+    volume: 12.4
+  },
+  {
+    rank: 11,
+    avatar: '/assets/c-avatar11.png',
+    username: 'Dulce Vetrovs',
+    change: '+1.41%',
+    nfts: 66,
+    volume: 12.4
+  },
+  {
+    rank: 12,
+    avatar: '/assets/c-avatar12.png',
+    username: 'Nolan Siphron',
+    change: '+1.41%',
+    nfts: 66,
+    volume: 12.4
+  }
+]
