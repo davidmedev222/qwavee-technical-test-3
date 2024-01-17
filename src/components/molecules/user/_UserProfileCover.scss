@@ -2,62 +2,37 @@
 
 .cover__user {
   position: relative;
-  height: 250px;
+  height: 15.625rem; /* 250px */
   background: linear-gradient(180deg, rgba(151, 71, 255, 0) 21.88%, #9747ff 95.31%);
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem; /* 50px */
 
   &__image {
     z-index: -1;
-    object-fit: cover;
-    object-position: center;
-
-    &--tablet {
-      display: none;
-    }
-    &--desktop {
-      display: none;
-    }
   }
   &__avatar {
     object-fit: cover;
     position: absolute;
-    border-radius: 20px;
-    border: 2px solid $bg-primary;
-    inset: 0 0 -50px 0;
+    border-radius: 1.25rem; /* 20px */
+    border: 0.125rem solid $bg-primary; /* 2px */
+    inset: 0 0 -3.125rem 0; /* 0 0 -50px 0 */
     margin: auto auto 0 auto;
   }
 
   @media screen and (min-width: $screen-tablet) {
     & {
-      height: 280px;
-    }
-    &__image {
-      &--mobile {
-        display: none;
-      }
-      &--tablet {
-        display: block;
-      }
+      height: 17.5rem; /* 280px */
     }
     &__avatar {
-      inset: 0 0 -50px 72px;
+      inset: 0 0 -3.125rem 4.5rem; /* 0 0 -50px 72px */
       margin: auto auto 0 0;
     }
   }
   @media screen and (min-width: $screen-lg) {
     & {
-      height: 320px;
-    }
-    &__image {
-      &--tablet {
-        display: none;
-      }
-      &--desktop {
-        display: block;
-      }
+      height: 20rem; /* 320px */
     }
     &__avatar {
-      inset: 0 0 -50px 115px;
+      inset: 0 0 -3.125rem 7.1875rem; /* 0 0 -50px 115px */
     }
   }
 }

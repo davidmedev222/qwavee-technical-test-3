@@ -2,7 +2,7 @@
 @use '../../../styles/base/variables' as *;
 
 .category {
-  border-radius: 20px;
+  border-radius: 1.25rem; /* 20px */
   background: $bg-secondary;
   height: 100%;
 
@@ -16,18 +16,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 1.25rem 1.25rem 0rem 0rem; /* 20px 20px 0px 0px */
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(7.5px);
-    padding: 31px 34px;
+    backdrop-filter: blur(0.4688rem); /* 7.5px */
+    padding: 1.9375rem 2.125rem; /* 31px 34px */
 
     & svg {
-      width: 80px;
-      height: 80px;
+      width: 5rem; /* 80px */
+      height: 5rem; /* 80px */
     }
   }
   &__footer {
-    padding: 20px 20px 25px 20px;
+    padding: 1.25rem 1.25rem 1.5625rem 1.25rem; /* 20px 20px 25px 20px */
   }
   &__title {
     @include text(bodybase);
@@ -36,20 +36,20 @@
 
   @media screen and (min-width: $screen-sm) {
     &__backdrop {
-      padding: 31px 35px;
+      padding: 1.9375rem 2.1875rem; /* 31px 35px */
     }
   }
   @media screen and (min-width: $screen-xl) {
     &__backdrop {
-      padding: 70px;
+      padding: 4.375rem; /* 70px */
 
       & svg {
-        width: 100px;
-        height: 100px;
+        width: 6.25rem; /* 100px */
+        height: 6.25rem; /* 100px */
       }
     }
     &__footer {
-      padding: 20px 30px 25px 30px;
+      padding: 1.25rem 1.875rem 1.5625rem 1.875rem; /* 20px 30px 25px 30px */
     }
     &__title {
       @include text(h5);

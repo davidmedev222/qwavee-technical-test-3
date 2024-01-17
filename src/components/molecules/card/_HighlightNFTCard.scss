@@ -2,20 +2,20 @@
 @use '../../../styles/base/variables' as *;
 
 .highlight {
-  border-radius: 20px;
+  border-radius: 1.25rem; /* 20px */
   background-color: $bg-secondary;
 
   &__image {
     width: 100%;
     object-fit: cover;
     object-position: center;
-    max-height: 221px;
-    border-radius: 20px 20px 0px 0px;
+    max-height: 13.8125rem; /* 221px */
+    border-radius: 1.25rem 1.25rem 0rem 0rem; /* 20px 20px 0px 0px */
   }
   &__footer {
     display: grid;
-    gap: 10px;
-    padding: 20px;
+    gap: 0.625rem; /* 10px */
+    padding: 1.25rem; /* 20px */
   }
   &__title {
     @include text(h5);
@@ -24,7 +24,7 @@
 
   @media screen and (min-width: $screen-lg) {
     &__image {
-      max-height: 401px;
+      max-height: 25.0625rem; /* 401px */
     }
   }
 }

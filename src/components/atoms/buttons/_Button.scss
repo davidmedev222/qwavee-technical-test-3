@@ -6,15 +6,15 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 12px;
-  padding: 19px 50px;
+  gap: 0.75rem; /* 12px */
+  padding: 1.1875rem 3.125rem; /* 19px 50px */
   background-color: $color-purple-500;
-  border-radius: 20px;
+  border-radius: 1.25rem; /* 20px */
   @include text(button);
   font-weight: 600;
 
   &--outlined {
-    border: 2px solid $color-purple-500;
+    border: 0.125rem solid $color-purple-500; /* 2px */
     background-color: transparent;
 
     & svg {
@@ -31,19 +31,19 @@
   }
   &--wallet {
     justify-content: flex-start;
-    gap: 20px;
-    padding: 14px 20px 14px 40px;
-    border: 1px solid $color-purple-500;
+    gap: 1.25rem; /* 20px */
+    padding: 0.875rem 1.25rem 0.875rem 2.5rem; /* 14px 20px 14px 40px */
+    border: 0.0625rem solid $color-purple-500; /* 1px */
     background-color: $bg-secondary;
     @include text(h5);
 
     @media screen and (min-width: $screen-lg) {
       & {
-        padding: 16px 20px 16px 40px;
+        padding: 1rem 1.25rem 1rem 2.5rem; /* 16px 20px 16px 40px */
 
         & svg {
-          width: 40px;
-          height: 40px;
+          width: 2.5rem; /* 40px */
+          height: 2.5rem; /* 40px */
         }
       }
     }

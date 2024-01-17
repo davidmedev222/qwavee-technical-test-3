@@ -3,19 +3,19 @@
 .newsletter__section {
   display: grid;
   align-items: center;
-  gap: 30px;
-  margin: 40px 30px;
+  gap: 1.875rem; /* 30px */
+  margin: 2.5rem 1.875rem; /* 40px 30px */
 
   &__img {
     justify-self: center;
-    border-radius: 20px;
-    height: 255px;
+    border-radius: 1.25rem; /* 20px */
+    height: 15.9375rem; /* 255px */
     object-fit: cover;
     object-position: center;
   }
   &__info {
     display: grid;
-    gap: 10px;
+    gap: 0.625rem; /* 10px */
   }
 
   @media screen and (min-width: $screen-tablet) {
@@ -24,15 +24,15 @@
       grid-template-areas:
         'img info'
         'img form';
-      gap: 40px 30px;
-      margin: 40px 72px 80px 72px;
-      padding: 40px 30px;
-      border-radius: 20px;
+      gap: 2.5rem 1.875rem; /* 40px 30px */
+      margin: 2.5rem 4.5rem 5rem 4.5rem; /* 40px 72px 80px 72px */
+      padding: 2.5rem 1.875rem; /* 40px 30px */
+      border-radius: 1.25rem; /* 20px */
       background: $bg-secondary;
     }
     &__img {
       grid-area: img;
-      height: 280px;
+      height: 17.5rem; /* 280px */
     }
     &__info {
       align-self: end;
@@ -43,18 +43,18 @@
   }
   @media screen and (min-width: $screen-lg) {
     & {
-      gap: 40px 80px;
-      margin: 40px 115px 80px 115px;
-      padding: 60px;
+      gap: 2.5rem 5rem; /* 40px 80px */
+      margin: 2.5rem 7.1875rem 5rem 7.1875rem; /* 40px 115px 80px 115px */
+      padding: 3.75rem; /* 60px */
     }
     &__img {
-      height: 310px;
+      height: 19.375rem; /* 310px */
     }
   }
   @media screen and (min-width: $screen-xl) {
     & {
-      max-width: 1050px;
-      margin: 40px auto 80px auto;
+      max-width: 65.625rem; /* 1050px */
+      margin: 2.5rem auto 5rem auto; /* 40px auto 80px auto */
     }
   }
 }

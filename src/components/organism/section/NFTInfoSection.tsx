@@ -24,7 +24,9 @@ function NFTInfoSection({ nft }: Props) {
       </div>
       <AuctionTimerCard className='nft__section__timer' cta={<Button>Place bid</Button>} />
       <InfoDetailCard title='Created By'>
-        <UserPreview className='nft__section__user' user={nft.author} />
+        <Link href='/artist/1'>
+          <UserPreview className='nft__section__user' user={nft.author} />
+        </Link>
       </InfoDetailCard>
       <InfoDetailCard title='Description' titleAs='h3'>
         <p className='nft__section__description'>{nft.description}</p>

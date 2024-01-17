@@ -3,7 +3,7 @@
 
 .info__detail {
   display: grid;
-  gap: 10px;
+  gap: 0.625rem; /* 10px */
   @include text(bodybase);
   font-weight: 400;
 

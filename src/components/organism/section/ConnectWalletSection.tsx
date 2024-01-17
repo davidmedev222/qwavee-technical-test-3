@@ -1,30 +1,15 @@
-import { ConnectWalletCard } from '@/components'
-import Image from 'next/image'
+import { ConnectWalletCard, ResponsiveCover } from '@/components'
 
 function ConnectWalletSection() {
   return (
     <section className='connection__section'>
-      <div className='connection__section__imgs'>
-        <Image
-          className='connection__section__img connection__section__img--mobile'
-          src='/assets/cw-img.png'
-          fill
-          sizes='100vw'
-          alt='Aerial image'
-        />
-        <Image
-          className='connection__section__img connection__section__img--tablet'
-          src='/assets/cw-img2.png'
-          fill
-          sizes='50vw'
-          alt='Aerial image'
-        />
-        <Image
-          className='connection__section__img connection__section__img--desktop'
-          src='/assets/cw-img3.png'
-          fill
-          sizes='50vw'
-          alt='Aerial image'
+      <div className='connection__section__covers'>
+        <ResponsiveCover
+          covers={[
+            { src: '/assets/cw-img.png', alt: 'Aerial image', type: 'mobile' },
+            { src: '/assets/cw-img2.png', alt: 'Aerial image', type: 'tablet' },
+            { src: '/assets/cw-img3.png', alt: 'Aerial image', type: 'desktop' }
+          ]}
         />
       </div>
       <ConnectWalletCard />

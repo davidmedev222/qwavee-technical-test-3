@@ -2,7 +2,7 @@
 
 .artist__list {
   display: grid;
-  gap: 20px;
+  gap: 1.25rem; /* 20px */
 
   &__item {
     display: none;
@@ -15,7 +15,7 @@
   @media screen and (min-width: $screen-tablet) {
     & {
       grid-template-columns: repeat(2, 1fr);
-      gap: 30px;
+      gap: 1.875rem; /* 30px */
     }
     &__item:nth-child(-n + 6) {
       display: block;

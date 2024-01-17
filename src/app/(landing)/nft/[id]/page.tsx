@@ -16,7 +16,9 @@ function NftDetailPage({ params }: Props) {
 
   return (
     <main>
-      <ResponsiveCover covers={nft.covers} />
+      <div className='nft__section__cover'>
+        <ResponsiveCover covers={nft.covers} />
+      </div>
       <NFTInfoSection nft={nft.info} />
       <MoreFromArtistSection nfts={nft.nfts} />
     </main>

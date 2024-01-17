@@ -2,7 +2,7 @@
 
 .category__list {
   display: grid;
-  gap: 20px;
+  gap: 1.25rem; /* 20px */
 
   @media screen and (min-width: $screen-mobile) {
     & {
@@ -17,7 +17,7 @@
   @media screen and (min-width: $screen-tablet) {
     & {
       grid-template-columns: repeat(4, 1fr);
-      gap: 30px;
+      gap: 1.875rem; /* 30px */
     }
   }
 }

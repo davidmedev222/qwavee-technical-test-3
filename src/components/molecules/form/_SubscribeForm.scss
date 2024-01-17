@@ -2,14 +2,14 @@
 
 .newsletter__form {
   display: grid;
-  gap: 16px;
+  gap: 1rem; /* 16px */
 
   &--footer {
     @media screen and (min-width: $screen-tablet) {
       & {
         grid-template-columns: 1fr auto;
         gap: 0;
-        border-radius: 20px;
+        border-radius: 1.25rem; /* 20px */
         background-color: $color-white;
         width: fit-content;
       }
@@ -20,7 +20,7 @@
     & {
       grid-template-columns: 1fr auto;
       gap: 0;
-      border-radius: 20px;
+      border-radius: 1.25rem; /* 20px */
       background-color: $color-white;
     }
   }

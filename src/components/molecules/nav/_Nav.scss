@@ -7,13 +7,13 @@
   &__list {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem; /* 10px */
   }
   &__link {
     display: block;
     @include text(bodybase);
     font-weight: 600;
-    padding: 12px 20px;
+    padding: 0.75rem 1.25rem; /* 12px 20px */
     transition: color 250ms ease-in-out;
 
     &:hover {
@@ -40,13 +40,13 @@
     &__list {
       display: grid;
       justify-items: center;
-      gap: 10px;
+      gap: 0.625rem; /* 10px */
     }
     &__link {
       @extend .nav__link;
     }
     &__close {
-      margin: 32px 0;
+      margin: 2rem 0; /* 32px 0 */
       fill: $color-white;
     }
   }

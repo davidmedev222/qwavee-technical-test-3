@@ -1,5 +1,6 @@
 import { Tag } from '@/components'
 import clsx from 'clsx'
+import Link from 'next/link'
 
 interface Props {
   tags: string[]
@@ -11,7 +12,9 @@ function TagList({ tags, className }: Props) {
     <ul className={clsx('tag__list', className)}>
       {tags.map((tag, index) => (
         <li className='tag__list__item' key={index}>
-          <Tag>{tag}</Tag>
+          <Link href='/marketplace'>
+            <Tag>{tag}</Tag>
+          </Link>
         </li>
       ))}
     </ul>
