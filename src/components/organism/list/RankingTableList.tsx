@@ -1,5 +1,6 @@
 import { RankingHeaderTable, RankingItemTable } from '@/components'
 import { rankings } from '@/utils'
+import Link from 'next/link'
 
 function RankingTableList() {
   return (
@@ -9,7 +10,9 @@ function RankingTableList() {
       </li>
       {rankings.map((ranking) => (
         <li key={ranking.username}>
-          <RankingItemTable item={ranking} />
+          <Link href='/artist/1'>
+            <RankingItemTable item={ranking} />
+          </Link>
         </li>
       ))}
     </ul>

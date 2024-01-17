@@ -1,6 +1,7 @@
 import { CollectionCard } from '@/components'
 import { trendingCollections } from '@/utils'
 import clsx from 'clsx'
+import Link from 'next/link'
 
 function CollectionCardList() {
   return (
@@ -15,7 +16,9 @@ function CollectionCardList() {
           )}
           key={collection.title}
         >
-          <CollectionCard {...collection} />
+          <Link href='/nft/1'>
+            <CollectionCard {...collection} />
+          </Link>
         </li>
       ))}
     </ul>

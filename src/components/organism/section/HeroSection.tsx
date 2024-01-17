@@ -1,5 +1,6 @@
 import { ButtonLink, Heading, HighlightNFTCard, RocketIcon, StatList, Subhead } from '@/components'
 import { Routes, stats } from '@/utils'
+import Link from 'next/link'
 
 function HeroSection() {
   return (
@@ -10,7 +11,9 @@ function HeroSection() {
           NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.
         </Subhead>
       </div>
-      <HighlightNFTCard className='hero__highlight' />
+      <Link href='/artist/1' className='hero__highlight'>
+        <HighlightNFTCard />
+      </Link>
       <ButtonLink className='hero__btn' href={Routes.CreateAccount}>
         <RocketIcon />
         Get Started

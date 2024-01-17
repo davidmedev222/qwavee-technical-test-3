@@ -1,5 +1,6 @@
 import { NFTCard } from '@/components'
 import clsx from 'clsx'
+import Link from 'next/link'
 
 interface NFT {
   image: string
@@ -20,7 +21,9 @@ function NFTCardList({ className, nfts }: Props) {
     <ul className={clsx('nft__list', className)}>
       {nfts.map((nft) => (
         <li className='nft__list__item' key={nft.title}>
-          <NFTCard nft={nft} />
+          <Link href='/nft/1'>
+            <NFTCard nft={nft} />
+          </Link>
         </li>
       ))}
     </ul>
