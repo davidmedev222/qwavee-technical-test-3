@@ -1,8 +1,6 @@
 @use '../../../styles/base/variables' as *;
 
 .cover {
-  // position: relative;
-  // height: 320px;
   object-fit: cover;
   object-position: center;
 
@@ -14,9 +12,6 @@
   }
 
   @media screen and (min-width: $screen-tablet) {
-    // & {
-    //   height: 420px;
-    // }
     &--mobile {
       display: none;
     }
@@ -25,9 +20,6 @@
     }
   }
   @media screen and (min-width: $screen-lg) {
-    // & {
-    //   height: 560px;
-    // }
     &--tablet {
       display: none;
     }

@@ -6,14 +6,14 @@
 
   &__content {
     display: grid;
-    gap: 30px;
-    padding: 40px 30px;
+    gap: 1.875rem; /* 30px */
+    padding: 2.5rem 1.875rem; /* 40px 30px */
     max-width: $screen-desktop;
     margin: 0 auto;
   }
   &__info {
     display: grid;
-    gap: 20px;
+    gap: 1.25rem; /* 20px */
 
     &__description {
       @include text(bodybase);
@@ -23,7 +23,7 @@
   }
   &__subscribe {
     display: grid;
-    gap: 20px;
+    gap: 1.25rem; /* 20px */
 
     &__title {
       @include text(h5);
@@ -38,10 +38,10 @@
   }
   &__copyright {
     display: grid;
-    gap: 20px;
+    gap: 1.25rem; /* 20px */
 
     &__divider {
-      height: 1px;
+      height: 0.0625rem; /* 1px */
       width: 100%;
       background-color: $color-gray;
     }
@@ -54,20 +54,20 @@
 
   @media screen and (min-width: $screen-tablet) {
     &__content {
-      padding: 40px 72px;
+      padding: 2.5rem 4.5rem; /* 40px 72px */
     }
     &__copyright {
-      margin-top: 19px;
+      margin-top: 1.1875rem; /* 19px */
     }
   }
   @media screen and (min-width: $screen-lg) {
     &__content {
       grid-template-columns: auto auto 1fr;
-      gap: 30px 84px;
-      padding: 40px 146.29px;
+      gap: 1.875rem 5.25rem; /* 30px 84px */
+      padding: 2.5rem 9.1431rem; /* 40px 146.29px */
     }
     &__info {
-      max-width: 243px;
+      max-width: 15.1875rem; /* 243px */
     }
     &__copyright {
       grid-column: -1 / 1;

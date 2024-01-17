@@ -2,29 +2,29 @@
 @use '../../../styles/base/variables' as *;
 
 .nft {
-  border-radius: 20px;
+  border-radius: 1.25rem; /* 20px */
   background: $bg-secondary;
 
   &__image {
     position: relative;
     aspect-ratio: 1;
     width: 100%;
-    max-height: 238px;
+    max-height: 14.875rem; /* 238px */
 
     & img {
-      border-radius: 20px 20px 0px 0px;
+      border-radius: 1.25rem 1.25rem 0rem 0rem; /* 20px 20px 0px 0px */
       object-fit: cover;
       object-position: center;
     }
   }
   &__info {
     display: grid;
-    gap: 25px;
-    padding: 20px 20px 25px 20px;
+    gap: 1.5625rem; /* 25px */
+    padding: 1.25rem 1.25rem 1.5625rem 1.25rem; /* 20px 20px 25px 20px */
   }
   &__header {
     display: grid;
-    gap: 5px;
+    gap: 0.3125rem; /* 5px */
   }
   &__title {
     @include text(h5);
@@ -38,11 +38,11 @@
   &__footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 21px;
+    gap: 1.3125rem; /* 21px */
   }
   &__details {
     display: grid;
-    gap: 8px;
+    gap: 0.5rem; /* 8px */
 
     &--bid {
       text-align: right;
@@ -61,7 +61,7 @@
 
   @media screen and (min-width: $screen-sm) {
     &__image {
-      max-height: 296px;
+      max-height: 18.5rem; /* 296px */
     }
   }
 }

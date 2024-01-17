@@ -3,15 +3,15 @@
 
 .ranking__section {
   display: grid;
-  gap: 10px;
-  padding: 30px;
+  gap: 0.625rem; /* 10px */
+  padding: 1.875rem; /* 30px */
   max-width: $screen-desktop;
   margin: 0 auto;
 
   @media screen and (min-width: $screen-tablet) {
     & {
-      gap: 20px;
-      padding: 40px 72px;
+      gap: 1.25rem; /* 20px */
+      padding: 2.5rem 4.5rem; /* 40px 72px */
     }
     &__title {
       @include text(h3);
@@ -19,7 +19,7 @@
   }
   @media screen and (min-width: $screen-lg) {
     & {
-      padding: 80px 115px;
+      padding: 5rem 7.1875rem; /* 80px 115px */
     }
     &__title {
       @include text(h2);

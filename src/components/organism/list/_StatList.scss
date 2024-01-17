@@ -4,8 +4,8 @@
 .stats {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  max-width: 510px;
+  gap: 1.875rem; /* 30px */
+  max-width: 31.875rem; /* 510px */
 
   &__item {
     flex: 1 1 0%;
@@ -20,7 +20,7 @@
   }
   @media screen and (min-width: $screen-lg) {
     &__item {
-      font-size: 24px;
+      font-size: 1.5rem; /* 24px */
       line-height: 160%;
     }
     &__value {

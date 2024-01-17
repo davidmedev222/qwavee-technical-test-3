@@ -5,27 +5,27 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 20px;
-  padding: 20px;
-  border-radius: 20px;
+  gap: 1.25rem; /* 20px */
+  padding: 1.25rem; /* 20px */
+  border-radius: 1.25rem; /* 20px */
   background: $bg-secondary;
   position: relative;
 
   &__img {
-    width: 60px;
-    height: 60px;
-    border-radius: 100px;
+    width: 3.75rem; /* 60px */
+    height: 3.75rem; /* 60px */
+    border-radius: 6.25rem; /* 100px */
     object-fit: cover;
     background-color: $color-purple-500;
   }
   &__ranking {
-    width: 30px;
-    height: 30px;
+    width: 1.875rem; /* 30px */
+    height: 1.875rem; /* 30px */
     position: absolute;
-    left: 12px;
-    top: 13px;
+    left: 0.75rem; /* 12px */
+    top: 0.8125rem; /* 13px */
     color: $color-gray;
-    border-radius: 20px;
+    border-radius: 1.25rem; /* 20px */
     background: $bg-primary;
     @include text(bodybase);
     font-family: var(--font-space-mono);
@@ -35,7 +35,7 @@
   }
   &__footer {
     display: grid;
-    gap: 5px;
+    gap: 0.3125rem; /* 5px */
   }
   &__title {
     @include text(h5);
@@ -43,7 +43,7 @@
   }
   &__description {
     display: flex;
-    gap: 5px;
+    gap: 0.3125rem; /* 5px */
     align-items: center;
     @include text(bodybase);
     font-weight: 400;
@@ -60,12 +60,12 @@
       align-items: center;
     }
     &__img {
-      width: 120px;
-      height: 120px;
+      width: 7.5rem; /* 120px */
+      height: 7.5rem; /* 120px */
     }
     &__ranking {
-      left: 20px;
-      top: 18px;
+      left: 1.25rem; /* 20px */
+      top: 1.125rem; /* 18px */
     }
     &__footer {
       place-items: center;

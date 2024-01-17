@@ -4,25 +4,25 @@
 .tab__link {
   @include text(bodybase);
   font-weight: 600;
-  padding: 19px 10px;
+  padding: 1.1875rem 0.625rem; /* 19px 10px */
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 1rem; /* 16px */
   text-align: center;
-  border-bottom: 2px solid transparent;
+  border-bottom: 0.125rem solid transparent; /* 2px */
   transition: border-bottom 250ms ease-in-out;
 
   &:hover {
-    border-bottom: 2px solid $color-gray;
+    border-bottom: 0.125rem solid $color-gray; /* 2px */
   }
   &--active {
-    border-bottom: 2px solid $color-gray;
+    border-bottom: 0.125rem solid $color-gray; /* 2px */
   }
   &__badge {
-    border-radius: 20px;
+    border-radius: 1.25rem; /* 20px */
     background: $bg-secondary;
-    padding: 5px 10px;
+    padding: 0.3125rem 0.625rem; /* 5px 10px */
     @include text(caption);
     font-weight: 400;
     font-family: var(--font-space-mono);
@@ -35,7 +35,7 @@
 
   @media screen and (min-width: $screen-tablet) {
     & {
-      padding: 19px 30px;
+      padding: 1.1875rem 1.875rem; /* 19px 30px */
     }
     &__badge {
       display: block;
@@ -44,7 +44,7 @@
   @media screen and (min-width: $screen-lg) {
     & {
       @include text(h5);
-      padding: 14.5px 30px;
+      padding: 0.9063rem 1.875rem; /* 14.5px 30px */
     }
     &__badge {
       @include text(bodybase);

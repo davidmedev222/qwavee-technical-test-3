@@ -3,19 +3,19 @@
 
 .marketplace__section {
   display: grid;
-  gap: 30px;
-  padding: 40px 30px;
+  gap: 1.875rem; /* 30px */
+  padding: 2.5rem 1.875rem; /* 40px 30px */
   max-width: $screen-desktop;
   margin: 0 auto;
 
   &__info {
     display: grid;
-    gap: 10px;
+    gap: 0.625rem; /* 10px */
   }
 
   @media screen and (min-width: $screen-tablet) {
     & {
-      padding: 60px 72px;
+      padding: 3.75rem 4.5rem; /* 60px 72px */
     }
     &__title {
       @include text(h3);
@@ -23,7 +23,7 @@
   }
   @media screen and (min-width: $screen-lg) {
     & {
-      padding: 80px 115px;
+      padding: 5rem 7.1875rem; /* 80px 115px */
     }
     &__title {
       @include text(h2);
