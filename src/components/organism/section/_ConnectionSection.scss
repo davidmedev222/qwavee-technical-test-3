@@ -6,47 +6,15 @@
   max-width: $screen-desktop;
   margin: 0 auto;
 
-  &__imgs {
+  &__covers {
     position: relative;
     min-height: 232px;
     height: 100%;
-  }
-  &__img {
-    object-fit: cover;
-    object-position: center;
-
-    &--mobile {
-      max-height: 232px;
-    }
-    &--tablet {
-      display: none;
-    }
-    &--desktop {
-      display: none;
-    }
   }
 
   @media screen and (min-width: $screen-tablet) {
     & {
       grid-template-columns: repeat(2, 1fr);
-    }
-    &__img {
-      &--mobile {
-        display: none;
-      }
-      &--tablet {
-        display: block;
-      }
-    }
-  }
-  @media screen and (min-width: $screen-lg) {
-    &__img {
-      &--tablet {
-        display: none;
-      }
-      &--desktop {
-        display: block;
-      }
     }
   }
 }

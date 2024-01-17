@@ -8,6 +8,10 @@
   max-width: $screen-desktop;
   margin: 0 auto;
 
+  &__cover {
+    position: relative;
+    height: 320px;
+  }
   &__info {
     display: grid;
     gap: 10px;
@@ -43,6 +47,9 @@
       gap: 30px;
       padding: 40px 72px;
     }
+    &__cover {
+      height: 420px;
+    }
     &__title {
       @include text(h3);
     }
@@ -56,6 +63,9 @@
     & {
       gap: 30px 140px;
       padding: 40px 115px;
+    }
+    &__cover {
+      height: 560px;
     }
     &__title {
       @include text(h2);

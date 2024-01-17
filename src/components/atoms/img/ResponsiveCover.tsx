@@ -4,22 +4,23 @@ import Image from 'next/image'
 
 interface Props {
   covers: Cover[]
+  className?: string
 }
 
-function ResponsiveCover({ covers }: Props) {
+function ResponsiveCover({ covers, className }: Props) {
   return (
-    <div className='cover'>
+    <>
       {covers.map((cover, index) => (
         <Image
           key={index}
-          className={clsx('cover__img', `cover__img--${cover.type}`)}
+          className={clsx('cover', `cover--${cover.type}`, className)}
           src={cover.src}
           alt={cover.alt}
           fill
           sizes='100vw'
         />
       ))}
-    </div>
+    </>
   )
 }
 

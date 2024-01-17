@@ -8,15 +8,6 @@
 
   &__image {
     z-index: -1;
-    object-fit: cover;
-    object-position: center;
-
-    &--tablet {
-      display: none;
-    }
-    &--desktop {
-      display: none;
-    }
   }
   &__avatar {
     object-fit: cover;
@@ -31,14 +22,6 @@
     & {
       height: 280px;
     }
-    &__image {
-      &--mobile {
-        display: none;
-      }
-      &--tablet {
-        display: block;
-      }
-    }
     &__avatar {
       inset: 0 0 -50px 72px;
       margin: auto auto 0 0;
@@ -47,14 +30,6 @@
   @media screen and (min-width: $screen-lg) {
     & {
       height: 320px;
-    }
-    &__image {
-      &--tablet {
-        display: none;
-      }
-      &--desktop {
-        display: block;
-      }
     }
     &__avatar {
       inset: 0 0 -50px 115px;
