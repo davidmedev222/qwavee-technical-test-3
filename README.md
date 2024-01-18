@@ -5,7 +5,7 @@
 1. [Demo](#demo)
 2. [Instalación](#instalación)
 
-## **🚀 DEMO**
+## **🚀DEMO**
 
 [https://qwavee-technical-test-3.vercel.app/](https://qwavee-technical-test-3.vercel.app/)
 
