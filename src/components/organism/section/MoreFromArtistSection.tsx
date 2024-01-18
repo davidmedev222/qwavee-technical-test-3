@@ -2,6 +2,7 @@ import { ArrowIcon, ButtonLink, Heading, NFTCardList } from '@/components'
 import { Nft } from '@/models'
 
 interface Props {
+  /** Array of NFT objects to be displayed */
   nfts: Nft[]
 }
 

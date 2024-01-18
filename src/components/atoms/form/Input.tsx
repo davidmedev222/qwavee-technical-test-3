@@ -1,12 +1,14 @@
 import clsx from 'clsx'
 import { forwardRef } from 'react'
 
-type InputHTMLAtributes = Omit<React.InputHTMLAttributes<HTMLInputElement>, 'className'>
-
-interface Props extends InputHTMLAtributes {
+interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
+  /** Additional CSS classes to apply to the input element */
   className?: string
+  /** Variant of the input for different styling options */
   variant?: 'search'
+  /** Element to be displayed as an icon on the left side of the input */
   iconLeft?: JSX.Element
+  /** Element to be displayed as an icon on the right side of the input */
   iconRight?: JSX.Element
 }
 

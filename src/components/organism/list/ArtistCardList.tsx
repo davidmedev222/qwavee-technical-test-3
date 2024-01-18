@@ -4,6 +4,7 @@ import clsx from 'clsx'
 import Link from 'next/link'
 
 interface Props {
+  /** Optional CSS class name to customize the styling */
   className?: string
 }
 

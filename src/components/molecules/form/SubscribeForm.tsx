@@ -3,7 +3,9 @@ import EmailIcon from '@/components/atoms/icons/EmailIcon'
 import clsx from 'clsx'
 
 interface Props {
+  /** Additional CSS classes to apply to the component */
   className?: string
+  /** Variant of the subscribe form, e.g., for the footer */
   variant?: 'footer'
 }
 

@@ -9,6 +9,7 @@ export const metadata = {
 }
 
 interface Props {
+  /** The children of the component. */
   children: React.ReactNode
 }
 

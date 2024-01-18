@@ -1,7 +1,9 @@
 import clsx from 'clsx'
 
 interface Props {
+  /** Optional CSS class name */
   className?: string
+  /** Call to action element */
   cta?: JSX.Element
 }
 

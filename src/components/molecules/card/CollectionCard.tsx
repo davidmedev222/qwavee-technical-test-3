@@ -2,12 +2,19 @@ import { UserPreview } from '@/components'
 import Image from 'next/image'
 
 interface Props {
+  /** URL of the primary image */
   image: string
+  /** URL of the secondary image */
   imageTwo: string
+  /** URL of the tertiary image */
   imageThree: string
+  /** Count of items or elements */
   count: string
+  /** Title of the collection */
   title: string
+  /** Name of the artist */
   artist: string
+  /** URL of the artist's avatar image */
   avatar: string
 }
 

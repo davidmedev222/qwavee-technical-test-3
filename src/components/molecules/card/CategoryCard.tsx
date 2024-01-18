@@ -1,12 +1,16 @@
 import Image from 'next/image'
 
 interface Category {
+  /** The title of the category. */
   title: string
+  /** Function that returns the icon component for the category. */
   icon: () => JSX.Element
+  /** Image URL for the category. */
   image: string
 }
 
 interface Props {
+  /** Category object with title, icon function, and image URL. */
   category: Category
 }
 

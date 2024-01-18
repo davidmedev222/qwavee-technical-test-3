@@ -1,13 +1,18 @@
 import Image from 'next/image'
 
 interface Artist {
+  /** The ranking position of the artist */
   ranking: number
+  /** URL of the artist's avatar image */
   avatar: string
+  /** Name of the artist */
   name: string
+  /** Price associated with the artist's work */
   price: number
 }
 
 interface Props {
+  /** The artist object containing artist details */
   artist: Artist
 }
 

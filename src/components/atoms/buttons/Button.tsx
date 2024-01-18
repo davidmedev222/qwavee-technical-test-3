@@ -1,10 +1,11 @@
 import clsx from 'clsx'
 
-type ButtonHTMLAttributes = React.ButtonHTMLAttributes<HTMLButtonElement>
-
-interface Props extends ButtonHTMLAttributes {
+interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  /** React node(s) to be rendered inside the button */
   children: React.ReactNode
+  /** Additional CSS classes to apply to the button */
   className?: string
+  /** Variant of the button for different styling options */
   variant?: 'outlined' | 'light' | 'wallet'
 }
 

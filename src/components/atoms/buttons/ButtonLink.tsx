@@ -2,8 +2,11 @@ import clsx from 'clsx'
 import Link, { LinkProps } from 'next/link'
 
 interface Props extends LinkProps {
+  /** React node(s) to be rendered inside the button */
   children: React.ReactNode
+  /** Additional CSS classes to apply to the custom link */
   className?: string
+  /** Variant of the custom link for different styling options */
   variant?: 'outlined' | 'light'
 }
 

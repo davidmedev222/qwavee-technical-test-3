@@ -1,13 +1,18 @@
 import Image from 'next/image'
 
 interface Info {
+  /** URL of the image */
   image: string
+  /** Alternative text for the image */
   imageAlt: string
+  /** Title of the card */
   title: string
+  /** Description of the card */
   description: string
 }
 
 interface Props {
+  /** The information object containing details for the InfoCard */
   info: Info
 }
 

@@ -12,6 +12,7 @@ import { NftInfo } from '@/models'
 import Link from 'next/link'
 
 interface Props {
+  /** Information about the NFT */
   nft: NftInfo
 }
 

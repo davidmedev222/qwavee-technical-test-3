@@ -3,7 +3,9 @@ import clsx from 'clsx'
 import Image from 'next/image'
 
 interface Props {
+  /** Array of cover objects to be displayed */
   covers: Cover[]
+  /** Optional CSS class name for additional styling */
   className?: string
 }
 

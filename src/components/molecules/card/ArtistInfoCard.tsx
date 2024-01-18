@@ -3,6 +3,7 @@ import { ArtistInfo } from '@/models'
 import Link from 'next/link'
 
 interface Props {
+  /** Artist object containing artist details */
   artist: ArtistInfo
 }
 

@@ -1,7 +1,9 @@
 import clsx from 'clsx'
 
 interface Props {
+  /** The content to be displayed within the subhead */
   children: React.ReactNode
+  /** Optional CSS class name for additional styling */
   className?: string
 }
 

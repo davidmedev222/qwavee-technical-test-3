@@ -1,19 +1,13 @@
 import { NFTCard } from '@/components'
+import { Nft } from '@/models'
 import clsx from 'clsx'
 import Link from 'next/link'
 
-interface NFT {
-  image: string
-  title: string
-  avatar: string
-  name: string
-  price: number
-  bid: number
-}
-
 interface Props {
+  /** Optional CSS class name */
   className?: string
-  nfts: NFT[]
+  /** Array of NFT items to be displayed */
+  nfts: Nft[]
 }
 
 function NFTCardList({ className, nfts }: Props) {
