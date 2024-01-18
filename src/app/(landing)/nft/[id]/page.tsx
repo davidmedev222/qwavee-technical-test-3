@@ -3,10 +3,12 @@ import { nfts } from '@/utils'
 import { notFound } from 'next/navigation'
 
 interface Params {
+  /** Unique identifier for the resource. */
   id: string
 }
 
 interface Props {
+  /** Parameters for the nft detail page, including the unique identifier. */
   params: Params
 }
 

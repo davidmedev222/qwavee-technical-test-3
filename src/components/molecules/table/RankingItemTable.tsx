@@ -1,15 +1,22 @@
 import { UserPreview } from '@/components'
 
 interface RankingItem {
+  /** The ranking position */
   rank: number
+  /** URL of the user's avatar image */
   avatar: string
+  /** Username of the ranked user */
   username: string
+  /** Change in ranking since the last period */
   change: string
+  /** Number of NFTs sold */
   nfts: number
+  /** Total volume of NFT sales */
   volume: number
 }
 
 interface Props {
+  /** The item representing the ranking data */
   item: RankingItem
 }
 

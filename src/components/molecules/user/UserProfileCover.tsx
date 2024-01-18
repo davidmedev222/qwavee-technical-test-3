@@ -3,6 +3,7 @@ import { Images } from '@/models'
 import Image from 'next/image'
 
 interface Props {
+  /** Images object containing avatar and cover images */
   images: Images
 }
 

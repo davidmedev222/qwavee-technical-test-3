@@ -3,7 +3,9 @@ import { NavRoutes, Routes } from '@/utils'
 import clsx from 'clsx'
 
 interface Props {
+  /** Indicates if the navigation menu is open or not */
   isOpenMenu: boolean
+  /** Function to toggle the navigation menu open/close state */
   toggleOpenMenu: React.MouseEventHandler<HTMLElement>
 }
 

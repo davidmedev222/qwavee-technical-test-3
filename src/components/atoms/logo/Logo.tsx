@@ -4,6 +4,7 @@ import clsx from 'clsx'
 import Link from 'next/link'
 
 interface Props {
+  /** Optional size of the logo */
   size?: 'lg'
 }
 

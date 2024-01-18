@@ -2,9 +2,13 @@ import clsx from 'clsx'
 import Link, { LinkProps } from 'next/link'
 
 interface Props extends LinkProps {
+  /** React node elements to be rendered inside the link */
   children: React.ReactNode
+  /** Optional CSS class name to customize the styling */
   className?: string
+  /** Determines if the link is currently active */
   isActive?: boolean
+  /** Optional badge number to be displayed on the link */
   badge?: number
 }
 

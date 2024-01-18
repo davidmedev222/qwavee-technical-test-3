@@ -1,4 +1,5 @@
 interface Props {
+  /** Optional CSS class name to customize the styling */
   className?: string
 }
 

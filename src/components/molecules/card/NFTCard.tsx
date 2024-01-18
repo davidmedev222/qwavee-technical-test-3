@@ -1,16 +1,9 @@
 import { UserPreview } from '@/components'
+import { Nft } from '@/models'
 import Image from 'next/image'
 
-interface Nft {
-  image: string
-  title: string
-  avatar: string
-  name: string
-  price: number
-  bid: number
-}
-
 interface Props {
+  /** Object containing NFT details */
   nft: Nft
 }
 

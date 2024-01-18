@@ -2,12 +2,16 @@ import clsx from 'clsx'
 import Image from 'next/image'
 
 interface User {
+  /** URL of the user's avatar image */
   avatar: string
+  /** The user's display name */
   username: string
 }
 
 interface Props {
+  /** The user object containing user details */
   user: User
+  /** Optional CSS class names to customize the styling */
   className?: string
 }
 

@@ -3,7 +3,9 @@ import clsx from 'clsx'
 import Link from 'next/link'
 
 interface Props {
+  /** Array of tag strings to be displayed */
   tags: string[]
+  /** Optional className for additional styling */
   className?: string
 }
 

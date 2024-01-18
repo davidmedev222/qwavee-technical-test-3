@@ -2,7 +2,9 @@ import { Stats } from '@/models'
 import clsx from 'clsx'
 
 interface Props {
+  /** Optional CSS class name */
   className?: string
+  /** Array of statistics data */
   stats: Stats[]
 }
 
